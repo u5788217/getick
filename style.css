@@ -1,0 +1,96 @@
+html, body{
+	margin:0;
+	font-size: 100%;
+	font-family: 'Calibri';
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: firebrick;
+}
+.banner{
+    
+}
+.content{
+    background-color: whitesmoke;
+    margin: 0 100px 0 100px;
+    height: auto;
+}
+.content-left{
+    background-color: darkred;
+    height: 400px;
+    width: 1000px;
+    float: left;
+}
+.conleft-pic{
+    float: left;
+    margin: 5px 5px 0 5px;
+    background-color: black;
+}
+.conleft-pic img{
+    height: 270px;
+    width: 190px;
+}
+h2{
+    color: white;
+    margin: 0;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.content-left-bottom{
+    background-color: darkred;
+    height: 400px;
+    width: 1000px;
+    float: left;
+}
+.content-right{
+    float: right;
+    background-color: #333;
+    width: 310px;
+}
+.login{
+    margin: 25px 25px 0 25px;
+    width: 250px;
+    height: 150px;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+h3,label{
+    color: white;
+    margin: 0;
+    text-decoration: none;
+}
