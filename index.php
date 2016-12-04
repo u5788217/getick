@@ -19,7 +19,7 @@
          <div class="content-right">
             <div class="login">
                 <h3>Login</h3><br>
-                <label><b>Username</b></label>
+                <label><b>Username eee</b></label>
                 <input type="text" placeholder="Enter Username" name="uname" required>
 
                 <label><b>Password</b></label>
