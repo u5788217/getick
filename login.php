@@ -33,7 +33,7 @@
 			<input type="text" name="pwd" id="pwd" placeholder="password">
 			<input type="submit" name="send" id="send" value="send">
 		</form>
-		<input type="button" name="send" id="regis" value="Register">
+		<input type="button" name="send" id="send" value="Register">
 	</div>
 	<div id="footer">
 		<div>
