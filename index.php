@@ -25,7 +25,7 @@ session_start();
 				<a href="concert.html">concerts</a>
 			</li>
 			
-			<?php if (!$_SESSION["userid"]) { ?>
+			<?php if ($_SESSION["userid"]) { echo $_SESSION["userid"]; ?>
 			<li>
 				<a href="login.php">login</a>
 			</li>
