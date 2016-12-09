@@ -1,7 +1,7 @@
 <?php
 
 require_once 'config.php';
-
+echo "hello";
 try {
     $oConn = new PDO('mysql:host='.$sHost.';dbname='.$sDb, $sUsername, $sPassword);
     $oConn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
