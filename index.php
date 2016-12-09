@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!doctype html>
 <!-- Website Template by freewebsitetemplates.com -->
 <html>
@@ -21,9 +24,12 @@
 			<li>
 				<a href="concert.html">concerts</a>
 			</li>
+			
+			<?php if (!$_SESSION["userid"]) { ?>
 			<li>
 				<a href="login.php">login</a>
 			</li>
+			<?php } ?>
 		</ul>
 	</div>
 	<div id="body">
