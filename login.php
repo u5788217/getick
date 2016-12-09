@@ -29,8 +29,8 @@
 	<div id="body">
 		<h1><span>let's Login</span></h1>
 		<form method="get" action="login_db.php">
-			<input type="text" name="email" id="email" value="Email">
-			<input type="text" name="pwd" id="pwd" value="password">
+			<input type="text" name="email" id="email" placeholder="Email">
+			<input type="text" name="pwd" id="pwd" placeholder="password">
 			<input type="submit" name="send" id="send" value="send">
 		</form>
 	</div>
