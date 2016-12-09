@@ -8,6 +8,7 @@ try {
 	foreach ($oConn->query('SELECT * FROM account') as $aRow) {
         echo $aRow['userid'].$aRow['name']."<br>";
     }
+echo "hello";
 } catch(PDOException $e) {
     echo 'ERROR: ' . $e->getMessage();
 }
