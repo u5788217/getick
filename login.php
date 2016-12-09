@@ -31,7 +31,7 @@
 		<form method="get" action="login_db.php">
 			<input type="text" name="email" id="email" placeholder="Email">
 			<input type="text" name="pwd" id="pwd" placeholder="password">
-			<input type="" name="send" id="send" value="send">
+			<input type="submit" name="send" id="send" value="send">
 		</form>
 		<form action="">
 		<input type="submit" name="send" id="send" value="Register">
