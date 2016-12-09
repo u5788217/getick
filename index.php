@@ -30,6 +30,12 @@ session_start();
 				<a href="login.php">login</a>
 			</li>
 			<?php } ?>
+			
+			<?php if ($_SESSION["userid"]) { ?>
+			<li>
+				<a href="logout.php">logout</a>
+			</li>
+			<?php } ?>
 		</ul>
 	</div>
 	<div id="body">
