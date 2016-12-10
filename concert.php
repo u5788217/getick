@@ -14,7 +14,8 @@ session_start();
 		<h1><span>Concert Lists</span></h1>
 		<div>
 			<ul>	
-			<?php include 'concert_db.php';?>
+				<form method = "get" action="">
+					<?php include 'concert_db.php';?>
 				</form>
 			</ul>
 		</div>
