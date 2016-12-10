@@ -24,7 +24,7 @@ try {
 					</div>
 				</li>';
     }
-	mysql_close($oConn);
+    $oConn->execute();
 } catch(PDOException $e) {
     echo 'ERROR: ' . $e->getMessage();
 }
