@@ -10,43 +10,60 @@ session_start();
 <body>
 	<?php include 'header_menu.php';?>
 	<div id="body">
-		<h1><span>blog</span></h1>
+		<h1><span>Concert Lists</span></h1>
 		<div>
 			<ul>
 				<li>
 					<a href="blog-single-post.html" class="figure">
-						<img src="images/cutting-mustache.jpg" alt="">
+						<img src="images/concert/1coldplay.jpg" alt="">
 					</a>
 					<div>
-						<h3>why i grew a mustache</h3>
+						<h3>Coldplay</h3>
 						<p>
-							Our website templates are created with inspiration, checked for quality and originality and meticulously sliced and coded. What’s more, they’re absolutely free! You can do a lot with them. You can modify them.
+							Coldplay are a British rock band formed in 1996 by lead vocalist and keyboardist Chris Martin and lead guitarist Jonny Buckland at University College London (UCL).
 						</p>
-						<a href="blog-single-post.html" class="more">read this</a>
+                        <h3>Date: 20 Jan 2017</h3>
+                        <h3>Time: 10:00 ~ 15:00</h3>
+						<a href="blog-single-post.html" class="more">Book now</a>
 					</div>
 				</li>
 				<li>
 					<a href="blog-single-post.html" class="figure">
-						<img src="images/in-the-country.jpg" alt="">
+						<img src="images/concert/2Linkin-Park.png" alt="">
 					</a>
 					<div>
-						<h3>in the country</h3>
-						<p>
-							Our website templates are created with inspiration, checked for quality and originality and meticulously sliced and coded. What’s more, they’re absolutely free! You can do a lot with them. You can modify them.
+						<h3>Linkin Park</h3>
+						<p>Linkin Park is an American rock band from Agoura Hills, California, the band rose to international fame with their debut album Hybrid Theory (2000), which was certified diamond by the RIAA in 2005.
 						</p>
-						<a href="blog-single-post.html" class="more">read this</a>
+                        <h3>Date: 20 Jan 2017</h3>
+                        <h3>Time: 10:00 ~ 15:00</h3>
+						<a href="blog-single-post.html" class="more">Book now</a>
 					</div>
 				</li>
-				<li>
+                <li>
 					<a href="blog-single-post.html" class="figure">
-						<img src="images/mustache-brothers.jpg" alt="">
+						<img src="images/concert/3Adele.jpg" alt="">
 					</a>
 					<div>
-						<h3>the mustache brothers</h3>
-						<p>
-							Our website templates are created with inspiration, checked for quality and originality and meticulously sliced and coded. What’s more, they’re absolutely free! You can do a lot with them. You can modify them.
+						<h3>Adele Laurie</h3>
+						<p>Adele Laurie Blue Adkins MBE is an English singer-songwriter. Graduating from the BRIT School for Performing Arts and Technology in 2006, Adele was given a recording contract by XL Recordings.
 						</p>
-						<a href="blog-single-post.html" class="more">read this</a>
+                        <h3>Date: 20 Jan 2017</h3>
+                        <h3>Time: 10:00 ~ 15:00</h3>
+						<a href="blog-single-post.html" class="more">Book now</a>
+					</div>
+				</li>
+                <li>
+					<a href="blog-single-post.html" class="figure">
+						<img src="images/concert/4alternative-rock.jpg" alt="">
+					</a>
+					<div>
+						<h3>Alternative rock</h3>
+						<p>Alternative rock is a genre of rock music that emerged from the independent music underground of the 1980s and became widely popular in the 1990s and 2000s.
+						</p>
+                        <h3>Date: 20 Jan 2017</h3>
+                        <h3>Time: 10:00 ~ 15:00</h3>
+						<a href="blog-single-post.html" class="more">Book now</a>
 					</div>
 				</li>
 			</ul>
