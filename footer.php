@@ -1,5 +1,5 @@
 <?php
-	echo "<div id="footer">
+	echo '<div id="footer">
 		<div>
 			<p>&copy; 2023 by Mustacchio. All rights reserved.</p>
 			<ul>
@@ -17,5 +17,5 @@
 				</li>
 			</ul>
 		</div>
-	</div>";
+	</div>';
 ?>
