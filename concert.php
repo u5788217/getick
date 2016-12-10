@@ -16,6 +16,7 @@ session_start();
 			<ul>
 				
 				
+			<?php include 'concert_db.php';?>
 				<li>
 					<a href="blog-single-post.html" class="figure">
 						<img src="images/concert/1coldplay.jpg" alt="">
