@@ -1,7 +1,7 @@
 <?php
 
-require_once 'config.php';
-    $oConn = connect_db();
+include 'config.php';
+   $oConn = connect_db();
 	foreach ($oConn->query('SELECT * FROM concert') as $aRow) {
         	$conid = $aRow['id_concert'];
 		echo 'Hello <li>
