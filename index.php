@@ -22,7 +22,7 @@ session_start();
 				<a href="index.php">home</a>
 			</li>
 			<li>
-				<a href="concert.html">concerts</a>
+				<a href="concert.php">concerts</a>
 			</li>
 			
 			<?php if (!$_SESSION["userid"]) { ?>
