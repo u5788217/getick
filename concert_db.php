@@ -1,10 +1,7 @@
 <?php
 
 require_once 'config.php';
-
-try {
-    $oConn = $condb;
-    $oConn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $oConn = connect_db();
 	foreach ($oConn->query('SELECT * FROM concert') as $aRow) {
         $conid = $aRow['id_concert'];
 		echo '<li>
@@ -19,11 +16,6 @@ try {
         echo '</select><input type="submit" value = "Book now"class="more">
 		</div>
 		</li>';
-    }
-    $oConn->execute();
-} catch(PDOException $e) {
-    echo 'ERROR: ' . $e->getMessage();
-}
 ?>
 
 	
