@@ -3,7 +3,7 @@
 require_once 'config.php';
 
 try {
-    $oConn = new PDO('mysql:host='.$sHost.';dbname='.$sDb, $sUsername, $sPassword);
+    $oConn = $condb;
     $oConn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	foreach ($oConn->query('SELECT * FROM concert') as $aRow) {
         $conid = $aRow['id_concert'];
