@@ -15,6 +15,7 @@ session_start();
 		<div>
 			<ul>	
 			<?php include 'concert_db.php';?>
+				</form>
 			</ul>
 		</div>
 	</div>
