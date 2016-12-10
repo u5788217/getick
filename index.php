@@ -9,68 +9,43 @@ session_start();
 </head>
 <body>
 	<?php include 'header_menu.php';?>
-	<div class="banner">
-        <img src="logo1.png" style="height:100px; margin: 0 100px 0 100px;">
-        <ul>
-            <li style="margin-left: 100px;"><a href="#">Home</a></li>
-            <li><a href="#">Concert</a></li>
-            <li style="float:right; margin-right: 100px;"><a class="active" href="#about">About</a></li>
-        </ul>
-    </div>
-    <div class="content">
-        <center><img src="coldplay_main2.png" style="width: 1320px;"></center>
-         <div class="content-right">
-            <div class="login">
-                <h3>Login</h3><br>
-                <label><b>Username eee</b></label>
-                <input type="text" placeholder="Enter Username" name="uname" required>
-
-                <label><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required>
-        
-                <button type="submit">Login</button>
-            </div>
-        </div>
-        <div class="content-left">
-            <h2>Recommended Events</h2>
-            <div class="conleft-pic">
-                <a href="#"><img src="concert/1coldplay.jpg"><br>Coldplay</a>
-            </div>
-            <div class="conleft-pic">
-                <a href="#"><img src="concert/2Linkin-Park.png"><br>Linkin-Park</a>
-            </div>
-            <div class="conleft-pic">
-                <a href="#"><img src="concert/3Adele.jpg"><br>Adele</a>
-            </div>
-            <div class="conleft-pic">
-                <a href="#"><img src="concert/4alternative-rock.jpg"><br>alternative-rock</a>
-            </div>
-            <div class="conleft-pic">
-                <a href="#"><img src="concert/5soundofmusic.jpg"><br>soundofmusic</a>
-            </div>
-        </div>
-        
-        <img src="ad.jpg" style="float: right;">
-        <div class="content-left-bottom">
-            <h2>Hot Events</h2>
-            <div class="conleft-pic">
-                <a href="#"><img src="concert/6Fourpandin.jpg"><br>Fourpandin</a>
-            </div>
-            <div class="conleft-pic">
-                <a href="#"><img src="concert/7Bird.jpg"><br>Bird</a>
-            </div>
-            <div class="conleft-pic">
-                <a href="#"><img src="concert/8bodyslam_nanglen_ver2_xlg.jpg"><br>bodyslam nanglen</a>
-            </div>
-            <div class="conleft-pic">
-                <a href="#"><img src="concert/9bie.jpg"><br>bie</a>
-            </div>
-            <div class="conleft-pic">
-                <a href="#"><img src="concert/10poster.jpg"><br>poster</a>
-            </div>
-        </div>
-       
-    </div>
+	<div id="body">
+		<div id="featured">
+			<img src="images/coldplay_main.jpg" alt="">
+			<div>
+				<h2>Coldplay</h2>
+				<span>Coldplay have announced Dublin and Cardiff shows as part of their 2017 European tour. Catch them live by checking out the tour dates and concert ticket information below on Stereoboard.</span>
+				<a href="booking-id001.html" class="more">Book Now</a>
+			</div>
+		</div>
+        <h1 style="background-color: black">Recommendation Concerts</h1>
+		<ul>
+			<li>
+				<a href="concert.html">
+					<img src="images/concert/3Adele.jpg" alt="">
+					<span>Adele</span>
+                    <h3>Date: 20 Jan 2017</h3>
+                    <h3>Time: 10:00 ~ 15:00</h3>
+				</a>
+			</li>
+			<li>
+				<a href="concert.html">
+					<img src="images/concert/6Fourpandin.jpg" alt="">
+					<span>the actor</span>
+                    <h3>Date: 20 Jan 2017</h3>
+                    <h3>Time: 10:00 ~ 15:00</h3>
+				</a>
+			</li>
+			<li>
+				<a href="concert.html">
+					<img src="images/concert/8bodyslam_nanglen_ver2_xlg.jpg" alt="">
+					<span>the nerd</span>
+                    <h3>Date: 20 Jan 2017</h3>
+                    <h3>Time: 10:00 ~ 15:00</h3>
+				</a>
+			</li>
+		</ul>
+	</div>
 	<?php include 'footer.php';?>
 </body>
 </html>
