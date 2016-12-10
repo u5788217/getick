@@ -10,19 +10,17 @@ session_start();
 			</li>
 			<li>
 				<a href="concert.php">concerts</a>
-			</li>
+			</li>';
 			
-			<?php if (!$_SESSION["userid"]) { ?>
-			<li>
+			if (!$_SESSION["userid"])
+			echo '<li>
 				<a href="login.php">login</a>
-			</li>
-			<?php } ?>
+			      </li>';
 			
-			<?php if ($_SESSION["userid"]) { ?>
-			<li>
+			if ($_SESSION["userid"])
+			echo '<li>
 				<a href="logout.php">logout</a>
-			</li>
-			<?php } ?>
-		</ul>
+			     </li>';
+	echo	'</ul>
 	</div>';
 ?>
