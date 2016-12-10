@@ -15,13 +15,13 @@ session_start();
 			<div>
 				<h2>Coldplay</h2>
 				<span>Coldplay have announced Dublin and Cardiff shows as part of their 2017 European tour. Catch them live by checking out the tour dates and concert ticket information below on Stereoboard.</span>
-				<a href="booking-id001.html" class="more">Book Now</a>
+				<a href="concert.php" class="more">Book Now</a>
 			</div>
 		</div>
         <h1 style="background-color: black">Recommendation Concerts</h1>
 		<ul>
 			<li>
-				<a href="concert.html">
+				<a href="concert.php">
 					<img src="images/concert/3Adele.jpg" alt="">
 					<span>Adele</span>
                     <h3>Date: 20 Jan 2017</h3>
@@ -29,7 +29,7 @@ session_start();
 				</a>
 			</li>
 			<li>
-				<a href="concert.html">
+				<a href="concert.php">
 					<img src="images/concert/6Fourpandin.jpg" alt="">
 					<span>the actor</span>
                     <h3>Date: 20 Jan 2017</h3>
@@ -37,7 +37,7 @@ session_start();
 				</a>
 			</li>
 			<li>
-				<a href="concert.html">
+				<a href="concert.php">
 					<img src="images/concert/8bodyslam_nanglen_ver2_xlg.jpg" alt="">
 					<span>the nerd</span>
                     <h3>Date: 20 Jan 2017</h3>
