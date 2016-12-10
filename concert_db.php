@@ -16,7 +16,8 @@ require_once 'config.php';
         echo '</select><input type="submit" value = "Book now"class="more">
 		</div>
 		</li>';
-	$oConn->execute();
+	$oConn = null;
+	connect_db() = null;
 ?>
 
 	
