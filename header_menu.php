@@ -1,7 +1,7 @@
 <?php
 session_start();
 	echo '<div id="header">
-		<a href="index.html" class="logo">
+		<a href="index.php" class="logo">
 			<img src="images/logo.jpg" alt="">
 		</a>
 		<ul id="navigation">
