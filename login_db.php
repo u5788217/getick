@@ -10,7 +10,7 @@ try {
 			header('Location: /index.php');
 		}
     	}
-    mysql_close($oConn);
+     $oConn = null;
 } catch(PDOException $e) {
     echo 'ERROR: ' . $e->getMessage();
 }
