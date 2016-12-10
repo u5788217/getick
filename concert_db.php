@@ -2,7 +2,6 @@
 
 include 'config.php';
    $oConn = connect_db();
-	echo '<form method = "get" action="">';
 	foreach ($oConn->query('SELECT * FROM concert') as $aRow) {
         	$conid = $aRow['id_concert'];
 		echo '<li>
@@ -18,7 +17,6 @@ include 'config.php';
 		</div>
 		</li>';
 	}
- 	echo '</form>';
 	$oConn = null;
 ?>
 
