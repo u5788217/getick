@@ -16,6 +16,7 @@ include 'config.php';
         echo '</select><input type="submit" value = "Book now"class="more">
 		</div>
 		</li>';
+	}
 	$oConn = null;
 ?>
 
