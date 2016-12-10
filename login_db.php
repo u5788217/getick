@@ -7,7 +7,8 @@ $oConn = connect_db();
 			$_SESSION["userid"] = $aRow['idaccount'];
 			header('Location: /index.php');
 		}
-	}  	
+	}  
+$oConn->execute();
 ?>
 
 	
