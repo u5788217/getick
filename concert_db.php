@@ -17,7 +17,6 @@ require_once 'config.php';
 		</div>
 		</li>';
 	$oConn = null;
-	connect_db() = null;
 ?>
 
 	
