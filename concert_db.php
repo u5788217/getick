@@ -4,7 +4,7 @@ include 'config.php';
    $oConn = connect_db();
 	foreach ($oConn->query('SELECT * FROM concert') as $aRow) {
         	$conid = $aRow['id_concert'];
-		echo '<li>
+		echo '$conid <li>
 		 	<a href="" class="figure">
 			<img src="'.$aRow['poster_concert'].'" alt="">
 			</a>
