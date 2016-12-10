@@ -1,4 +1,5 @@
 <?php
+session_start();
 	echo '<div id="header">
 		<a href="index.html" class="logo">
 			<img src="images/logo.jpg" alt="">
