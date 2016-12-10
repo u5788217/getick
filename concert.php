@@ -5,12 +5,7 @@ session_start();
 <!-- Website Template by freewebsitetemplates.com -->
 <html>
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Blog - Mustache Enthusiast</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/mobile.css" media="screen and (max-width : 568px)">
-	<script type="text/javascript" src="js/mobile.js"></script>
+	<?php include 'header.php';?>
 </head>
 <body>
 	<?php include 'header_menu.php';?>
