@@ -14,7 +14,7 @@ session_start();
 		<h1><span>Concert Lists</span></h1>
 		<div>
 			<ul>
-				<?php include 'concert_db.php';?>
+				
 				
 				<li>
 					<a href="blog-single-post.html" class="figure">
