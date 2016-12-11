@@ -15,12 +15,27 @@ include 'config.php';
                                 <td>Available seat</td>
                             </tr>';
 		foreach ($oConn->query("SELECT * FROM zone WHERE id_round = '$roundid'") as $aRow3) {
-			echo	'<tr>
-                        <td>'.$aRow3['name_zone'].'</td>
-                        <td>'.$aRow3['price'].'</td>
-			//ต้องมาหาที่ว่างทีหลัง
-                        <td>30</td>
-                     </tr>';
+			if($aRow3['name_zone'] == 'A'){
+				echo	'<tr>
+                        	<td id='A'>'.$aRow3['name_zone'].'</td>
+                        	<td id='A'>'.$aRow3['price'].'</td>
+				<td>30</td>
+                    		</tr>';
+			}
+			if($aRow3['name_zone'] == 'B'){
+				echo	'<tr>
+                        	<td id='B'>'.$aRow3['name_zone'].'</td>
+                        	<td id='B'>'.$aRow3['price'].'</td>
+				<td>30</td>
+				</tr>';
+			}
+			if($aRow3['name_zone'] == 'C'){
+				echo	'<tr>
+                        	<td id='C'>'.$aRow3['name_zone'].'</td>
+                        	<td id='C'>'.$aRow3['price'].'</td>
+				<td>30</td>
+                    		</tr>';
+			}
 		}
 	}
 	echo '</table></div></li><li><div style="width: 940px;" class="seat-style"><table>';
