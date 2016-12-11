@@ -33,7 +33,7 @@ function showCheck(str) {
       this.responseText;
     }
   };
-  xhttp.open("GET", "book_ajax.php?="+str,true);
+  xhttp.open("GET", "book_ajax.php?str="+str,true);
   xhttp.send();
 }
 </script>
