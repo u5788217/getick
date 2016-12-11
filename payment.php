@@ -11,7 +11,7 @@ session_start();
 	<?php include 'header_menu.php';?>
 	<div id="body">
 		
-		<h1><span>Concert Lists</span></h1>
+		<h1><span>Payment</span></h1>
 		<div>
 			<ul>	
 			 <?php include 'payment_db.php';?>
