@@ -15,27 +15,11 @@ include 'config.php';
                                 <td>Available seat</td>
                             </tr>';
 		foreach ($oConn->query("SELECT * FROM zone WHERE id_round = '$roundid'") as $aRow3) {
-			if(strcmp($aRow3['name_zone'],'A') == 0){
-				echo '<tr>
-                        	<td id='A'>'.$aRow3['name_zone'].'</td>
-                        	<td id='A'>'.$aRow3['price'].'</td>
-				<td>30</td>
-                    		</tr>';
-			}
-			else if(strcmp($aRow3['name_zone'],'B') == 0){
-				echo '<tr>
-                        	<td id='B'>'.$aRow3['name_zone'].'</td>
-                        	<td id='B'>'.$aRow3['price'].'</td>
-				<td>30</td>
-				</tr>';
-			}
-			else if(strcmp($aRow3['name_zone'],'C') == 0){
-				echo '<tr>
-                        	<td id='C'>'.$aRow3['name_zone'].'</td>
-                        	<td id='C'>'.$aRow3['price'].'</td>
-				<td>30</td>
-                    		</tr>';
-			}
+			echo '<tr>
+                        <td>'.$aRow3['name_zone'].'</td>
+                        <td>'.$aRow3['price'].'</td>
+			<td>30</td>
+                    	</tr>';
 		}
 	}
 	echo '</table></div></li><li><div style="width: 940px;" class="seat-style"><table>';
