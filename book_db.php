@@ -23,9 +23,8 @@ include 'config.php';
                      </tr>';
 		}
 	}
-	echo '</table></div></li>
-    <li><div style="width: 940px;" class="seat-style"><table>';
-    foreach ($oConn->query("SELECT * FROM seat WHERE id_round = '$roundid'") as $aRow) {
+	echo '</table></div></li><li><div style="width: 940px;" class="seat-style"><table>';
+   foreach ($oConn->query("SELECT * FROM seat WHERE id_zone = '$roundid'") as $aRow) {
         switch ($roundid) {
             case 1,2,6,10,14,15:
                 for($i=1; $i<=8; $i++){
