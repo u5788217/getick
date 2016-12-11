@@ -426,3 +426,21 @@ p a:hover {
 #footer div ul li #pinterest:hover {
 	background-position: -44px -132px;
 }
+.seat-style table{
+       	border: 1px; width: 850px; margin-left: 45px;
+}
+.seat-style  table tr{
+        background-color: #6E6E6E;
+}
+.seat-style table tr td{
+        width: 40px; height: 30px;
+}
+.seat-style #A{
+        background-color: #F7FE2E;
+}
+.seat-style #B{
+        background-color: orange;
+}
+.seat-style #C{
+        background-color: lawngreen;
+}
