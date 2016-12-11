@@ -36,9 +36,9 @@ include 'config.php';
                     switch ($i) {
                         case 1:
                             echo '<tr><td colspan="6"></td><td colspan="8" style="background-color: white;">STAGE</td>
-                            <td colspan="6"></td></tr>';
+                            <td colspan="6"></td></tr>'; break;
 			case 2:case 4:case 6:case 8:
-                            echo '<tr><td colspan="20"></td></tr>';
+                            echo '<tr><td colspan="20"></td></tr>'; break;
                         case 3:
 			     echo '<tr><td colspan="1"></td> '.$j.'A';
                              for($j=1; $j<=56; $j++){
@@ -49,7 +49,7 @@ include 'config.php';
                                     else {echo '<td id="A">'.$aRow['$id_seat'].'<br></td>';}
                                     if($j%14==0) {echo '<td colspan="1"></td><tr><td colspan="1"></td>';}
                             }
-                            echo '</tr>';
+                            echo '</tr>'; break;
                         case 5:
                             echo '<tr><td colspan="1"></td>';
                             for($j=1; $j<=96; $j++){
@@ -60,7 +60,7 @@ include 'config.php';
                                     else{echo '<td id="B">'.$aRow['$id_seat'].'<br></td>';}
                                     if($j%16==0){echo '<td colspan="1"></td><tr><td colspan="1"></td>';}
                             }
-                            echo '</tr>';
+                            echo '</tr>'; break;
                         case 7:
                             echo '<tr><td colspan="1"></td>';
                             for($j=1; $j<=90; $j++){
@@ -70,7 +70,7 @@ include 'config.php';
                                     else{echo '<td id="C">'.$aRow['$id_seat'].'<br></td>';}
                                     if($j%18==0){echo '<td colspan="1"></td><tr><td colspan="1"></td>';}
                             }
-                            echo '</tr>';                           
+                            echo '</tr>'; break;                         
                       }
                    }
 		break;
