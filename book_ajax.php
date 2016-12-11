@@ -1,7 +1,7 @@
 <?php
 include 'config.php';
    $oConn = connect_db();
-   $id = explode("&",$_GET['str']);
+   $id = explode("+",$_GET['str']);
    $seatid = $id[0];
    $zoneid = $id[1];
    $total =0;
