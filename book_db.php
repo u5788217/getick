@@ -42,7 +42,7 @@ include 'config.php';
                         		case 3:
 					     	echo '<tr><td colspan="1"></td>';
 					    	foreach ($oConn->query("SELECT * FROM seat WHERE id_zone = '$zoneid[0]'") as $aRow) {
-							$j=$aRow['$id_seat'];
+							echo $j=$aRow['$id_seat'];
 							if($j==8 || $j==22 || $j==36 || $j==50){echo '<td colspan="4"></td>';}
 							if($aRow['$id_booking'] == NULL){
 								echo '<td id="A">'.$aRow['$id_seat'].'<br><input type="checkbox" value="'.$aRow['$id_seat'].'"></td>';
