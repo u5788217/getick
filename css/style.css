@@ -435,12 +435,12 @@ p a:hover {
 .seat-style table tr td{
         width: 40px; height: 30px;
 }
-.seat-style #A{
+#A{
         background-color: #F7FE2E;
 }
-.seat-style #B{
+#B{
         background-color: orange;
 }
-.seat-style #C{
+#C{
         background-color: lawngreen;
 }
