@@ -8,9 +8,9 @@
 	<?php include 'header_menu.php';?>
 	<div id="body">
 		<h1><span>let's Login</span></h1>
-		<form method="get" action="login_db.php" id="login">
-			<input type="text" name="email" id="email" placeholder="Email">
-			<input type="text" name="pwd" id="pwd" placeholder="password">
+		<form method="get" action="login_db.php">
+			<input type="text" name="email" id="email" placeholder="Email" class="login">
+			<input type="text" name="pwd" id="pwd" placeholder="password" class="login">
 			<input type="submit" name="send" id="send" value="send">
 		</form>
 		<form action="">
