@@ -5,7 +5,8 @@ include 'config.php';
 	foreach ($oConn->query("SELECT * FROM round WHERE id_round = '$roundid'") as $aRow) {
 		$conid = $aRow['id_concert'];
 		foreach ($oConn->query("SELECT * FROM concert WHERE id_concert = '$conid'") as $aRow2) {
-			echo	'<div><h3>'.$aRow2['name_concert'].'</h3><p style="margin:0; padding:0;">'.$aRow2['des_concert'].'</p>';
+			echo	'<li><a href="" class="figure"><img src="'.$aRow2['poster_concert'].'" alt=""></a>
+			<div><h3>'.$aRow2['name_concert'].'</h3><p style="margin:0; padding:0;">'.$aRow2['des_concert'].'</p>';
 		}
 		echo '<h2>'.$aRow['date'].'<br> Time: '.$aRow['time'].'</h2><table border=1 style="width:300px; margin-left: 130px;">
                             <tr>
@@ -22,7 +23,7 @@ include 'config.php';
                      </tr>';
 		}
 	}
-	echo '</table></div>';
+	echo '</table></div></li>';
 	$oConn = null;
 ?>
 
