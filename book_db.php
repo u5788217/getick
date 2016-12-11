@@ -57,7 +57,7 @@ include 'config.php';
                                     			else{echo '<td id="B">'.$aRow['$id_seat'].'<br></td>';}
                                     			if($j%16==0){echo '<td colspan="1"></td><tr><td colspan="1"></td>';}
                             			}	
-                            			echo '</tr>'; break;s
+                            			echo '</tr>'; break;
                         		case 7:
                             			echo '<tr><td colspan="1"></td>';
                             			for($j=1; $j<=90; $j++){
