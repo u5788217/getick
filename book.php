@@ -10,15 +10,15 @@
 		<h1><span>Booking ticket</span></h1>
 		<div>
 			<ul>	
-				<form method="get">
+				
 				<?php include 'book_db.php';?>
 				<li>
                     		<div style="margin-left: 200px;">
                         	<h2 id = "demo"></h2>
-                        	<input type="submit" value="BOOK">
+                        	<input type="button" value="BOOK">
                     		</div>
                 		</li>
-				</form>
+			
 			</ul>
 		</div>
 	</div>
