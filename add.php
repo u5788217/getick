@@ -1,9 +1,15 @@
 <?php 
-$x = 1; 
 
-while($x <= 5) {
+include 'config.php';
+   $oConn = connect_db();
+$x = 3; 
+while($x <= 56) {
     $r = $x.'A';
-    echo 'The number is: '.$r.' <br>';
+    $oConn->query('INSERT INTO seat (id_seat,id_zone) VALUES ($r, 1)');
     $x++;
 } 
+$oConn = null;
 ?>
+
+
+  
