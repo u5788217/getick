@@ -35,7 +35,7 @@ include 'config.php';
                         case 2,4,6,8:
                             echo '<tr><td colspan="20"></td></tr>';
                         case 3:
-                            echo '<tr><td colspan="1"></td>';
+			    echo '<tr><td colspan="1"></td>';
                             for($j=1; $j<=56; $j++){
                                 if($aRow['$id_seat'] == $j.'A'){
                                     if($j==8 || $j==22 || $j==36 || $j==50)
@@ -67,21 +67,21 @@ include 'config.php';
                         case 7:
                             echo '<tr><td colspan="1"></td>';
                             for($j=1; $j<=90; $j++){
+				 if($aRow['$id_seat'] == $j.'C'){
                                     if($aRow['$id_booking'] != NULL)
                                         echo '<td id="C">'.$aRow['$id_seat'].'<br><input type="checkbox" value="'.$aRow['$id_seat'].'"></td>';
                                     else
                                         echo '<td id="C">'.$aRow['$id_seat'].'<br></td>';
                                     if($j%18==0)
                                         echo '<td colspan="1"></td><tr><td colspan="1"></td>';
-                                }
+                           	 }
                             }
                             echo '</tr>';                           
+                      }
                     }
-                }
-        
-        }
-        echo ' </table></div></li>';
-    }
+        	}
+            echo '</table></div></li>';
+    	}
 	$oConn = null;
 ?>
 
