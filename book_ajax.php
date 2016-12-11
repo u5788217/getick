@@ -4,6 +4,11 @@ include 'config.php';
    $id = explode("+",$_GET['str']);
    $seatid = $id[0];
    $zoneid = $id[1];
-   echo $id[1];
-   $oConn = null;
+   $price;
+	foreach ($oConn->query("SELECT * FROM zone WHERE id_zone = '$zoneid'") as $aRow2) {
+		$price=$aRow2['price'];
+	}
+	echo $zoneid.$seatid;
+	echo 'Total price : '.$total;
+	$oConn = null;
 ?>
