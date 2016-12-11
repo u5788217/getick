@@ -1,8 +1,8 @@
-<?php
-include 'config.php';
-   $oConn = connect_db();
-	$i = 1;
-	while(1<5) echo $i++;
-	//$oConn->query('SELECT * FROM concert');
-	$oConn = null;
+<?php 
+$x = 1; 
+
+while($x <= 5) {
+    echo "The number is: $x <br>";
+    $x++;
+} 
 ?>
