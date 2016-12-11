@@ -48,7 +48,7 @@ include 'config.php';
 								echo '<td id="A">'.$aRow['id_seat'].'<br><input type="checkbox" value="'.$aRow['id_seat'].'"></td>';
 							} 
 						   	else {echo '<td id="A">'.$aRow['id_seat'].'<br></td>';}
-							if($j%14==0) {echo '<td colspan="1"></td><tr><td colspan="1"></td>';}
+							if($j%14==0) {echo '<td colspan="1"></td><td colspan="1"></td>';}
 						}
 					    	echo '</tr>'; break;
                         		case 5:
@@ -60,7 +60,7 @@ include 'config.php';
 								echo '<td id="B">'.$aRow['id_seat'].'<br><input type="checkbox" value="'.$aRow['id_seat'].'"></td>';
 							}   
 							else{echo '<td id="B">'.$aRow['id_seat'].'<br></td>';}
-							if($j%16==0){echo '<td colspan="1"></td><tr><td colspan="1"></td>';}
+							if($j%16==0){echo '<td colspan="1"></td><td colspan="1"></td>';}
                             			}	
                             			echo '</tr>'; break;
                         		case 7:
@@ -71,7 +71,7 @@ include 'config.php';
 								echo '<td id="C">'.$aRow['id_seat'].'<br><input type="checkbox" value="'.$aRow['id_seat'].'"></td>';
 							}
 							else{echo '<td id="C">'.$aRow['id_seat'].'<br></td>';}
-							if($j%18==0){echo '<td colspan="1"></td><tr><td colspan="1"></td>';}
+							if($j%18==0){echo '<td colspan="1"></td><td colspan="1"></td>';}
                             			}
                             			echo '</tr>'; break;                         
                       		}//for switch
