@@ -8,7 +8,7 @@ include 'config.php';
 	foreach ($oConn->query("SELECT * FROM zone WHERE id_zone = '$zoneid'") as $aRow2) {
 		$price=$aRow2['price'];
 	}
-	echo $zoneid.$seatid;
+	echo $_GET['str'];
 	echo 'Total price : '.$total;
 	$oConn = null;
 ?>
