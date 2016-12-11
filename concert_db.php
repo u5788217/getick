@@ -13,7 +13,7 @@ include 'config.php';
 		foreach ($oConn->query("SELECT * FROM round WHERE id_concert = '$conid'") as $aRow) {
 			echo '<option value="'.$aRow['id_round'].'">'.$aRow['date'].' '.$aRow['time'].'</option>';
 		}
-        echo '</select><input id="123" type="submit" value="Book now"></form>
+        echo '</select><input type="submit" value="Book now"></form>
 		</div>  
 		</li>';
 	}
