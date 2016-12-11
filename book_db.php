@@ -5,8 +5,7 @@ include 'config.php';
 	foreach ($oConn->query("SELECT * FROM round WHERE id_round = '$roundid'") as $aRow) {
 		$conid = $aRow['id_concert'];
 		foreach ($oConn->query("SELECT * FROM concert WHERE id_concert = '$conid'") as $aRow2) {
-			echo	'<div><h3>'.$aRow2['name_concert'].'</h3>
-					<p style="margin:0; padding:0;">'.$aRow2['des_concert'].'</p>';
+			echo	'<div><h3>'.$aRow2['name_concert'].'</h3><p style="margin:0; padding:0;">'.$aRow2['des_concert'].'</p>';
 		}
 		echo '<h2>'.$aRow['date'].'<br> Time: '.$aRow['time'].'</h2><table border=1 style="width:300px; margin-left: 130px;">
                             <tr>
@@ -15,7 +14,7 @@ include 'config.php';
                                 <td>Available seat</td>
                             </tr>';
 		foreach ($oConn->query("SELECT * FROM zone WHERE id_round = '$roundid'") as $aRow3) {
-			$zoneid = = $aRow3['id_zone'];
+			$zoneid = $aRow3['id_zone'];
 			echo	'<tr>
                         <td>'.$aRow3['name_zone'].'</td>
                         <td>'.$aRow3['price'].'</td>
@@ -27,20 +26,4 @@ include 'config.php';
 	$oConn = null;
 ?>
 
-
-      
-                        
-							
-							
-                             <tr>
-                                <td>B</td>
-                                <td>4000</td>
-                                <td>40</td>
-                            </tr>
-							
-                             <tr>
-                                <td>C</td>
-                                <td>2500</td>
-                                 <td>50</td>
-                            </tr>
       
