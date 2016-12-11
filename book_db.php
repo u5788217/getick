@@ -35,9 +35,9 @@ include 'config.php';
 			    case 2:case 4:case 6:case 8:
                             echo '<tr><td colspan="20"></td></tr>';
                         case 3:
-			                 echo '<tr><td colspan="1"></td>';
+			     echo '<tr><td colspan="1"></td>';
                              for($j=1; $j<=56; $j++){
-                                if($aRow['$id_seat'] == $j.'A'){
+                                if(strcmp($aRow['$id_seat'],$j.'A') == 0){
                                     if($j==8 || $j==22 || $j==36 || $j==50){echo '<td colspan="4"></td>';}
                                     if($aRow['$id_booking'] == NULL){
                                         echo '<td id="A">'.$aRow['$id_seat'].'<br><input type="checkbox" value="'.$aRow['$id_seat'].'"></td>';
@@ -50,7 +50,7 @@ include 'config.php';
                         case 5:
                             echo '<tr><td colspan="1"></td>';
                             for($j=1; $j<=96; $j++){
-                                if($aRow['$id_seat'] == $j.'B'){
+                                if(strcmp($aRow['$id_seat'],$j.'B') == 0){
                                     if($j==9 || $j==25 || $j==41 || $j==57 || $j==73 || $j ==89){echo '<td colspan="4"></td>';}
                                     if($aRow['$id_booking'] == NULL){
                                         echo '<td id="B">'.$aRow['$id_seat'].'<br><input type="checkbox" value="'.$aRow['$id_seat'].'"></td>';
@@ -63,7 +63,7 @@ include 'config.php';
                         case 7:
                             echo '<tr><td colspan="1"></td>';
                             for($j=1; $j<=90; $j++){
-				                if($aRow['$id_seat'] == $j.'C'){
+				if(strcmp($aRow['$id_seat'],$j.'C') == 0){
                                     if($aRow['$id_booking'] == NULL){
                                         echo '<td id="C">'.$aRow['$id_seat'].'<br><input type="checkbox" value="'.$aRow['$id_seat'].'"></td>';
                                     }
