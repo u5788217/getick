@@ -9,15 +9,15 @@ include 'config.php';
 			<img src="'.$aRow['poster_concert'].'" alt="">
 			</a>
 			<div><h3>'.$aRow['name_concert'].'</h3>
-			<p>'.$aRow['des_concert'].'</p><select>';
+			<p>'.$aRow['des_concert'].'</p> <form method="get" action="book.php"> <select name="roundid">';
 		foreach ($oConn->query("SELECT * FROM round WHERE id_concert = '$conid'") as $aRow) {
 			echo '<option value="'.$aRow['id_round'].'">'.$aRow['date'].' '.$aRow['time'].'</option>';
 		}
-        echo '</select><input type="button" value="Book now" class="more">
-		</div>
+        echo '</select><input type="submit" class="more" value="Book now"></form>
+		</div>  
 		</li>';
 	}
 	$oConn = null;
 ?>
 
-	
+   
