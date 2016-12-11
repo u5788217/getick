@@ -26,6 +26,7 @@ include 'config.php';
 		}
 	}
 	echo '</table></div></li><li><div style="width: 940px;" class="seat-style"><table>';
+	echo '<form method = "get" action = "payment.php">';
 	$zoneid[4]; 
 	$l=0;
   	foreach ($oConn->query("SELECT * FROM zone WHERE id_round = '$roundid'") as $aRow3) {
