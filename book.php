@@ -15,7 +15,8 @@
 				<li>
                     		<div style="margin-left: 200px;">
                         	<h2 id = "demo"></h2>
-                        	<input type="button" value="BOOK">
+                        	<input type="submit" value="BOOK">
+				</form>
                     		</div>
                 		</li>
 			
