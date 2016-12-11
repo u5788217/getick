@@ -20,7 +20,7 @@ include 'config.php';
                         <td id="'.$aRow3['name_zone'].'">'.$aRow3['name_zone'].'</td>
                         <td id="'.$aRow3['name_zone'].'">'.$aRow3['price'].'</td>
 			<td id="'.$aRow3['name_zone'].'">';
-			foreach ($oConn->query("SELECT COUNT(*) AS number FROM seat WHERE id_zone = '$zone' AND id_booking = NULL")as $aRow4) {
+			foreach ($oConn->query("SELECT COUNT(*) AS number FROM seat WHERE id_zone = '$zone' AND id_booking == NULL")as $aRow4) {
 				echo $aRow4['number'].'</td></tr>';
 			}
 		}
