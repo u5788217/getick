@@ -26,13 +26,13 @@ include 'config.php';
 	echo '</table></div></li><li><div style="width: 940px;" class="seat-style"><table>';
   	foreach ($oConn->query("SELECT * FROM seat WHERE id_zone = '$roundid'") as $aRow) {
         switch ($aRow['id_zone']) {
-            case 1,2,6,10,14,15:
+		case 1:case 2:case 6:case 10:case 14:case 15:
                 for($i=1; $i<=8; $i++){
                     switch ($i) {
                         case 1:
                             echo '<tr><td colspan="6"></td><td colspan="8" style="background-color: white;">STAGE</td>
                             <td colspan="6"></td></tr>';
-                        case 2,4,6,8:
+			    case 2:case 4:case 6:case 8:
                             echo '<tr><td colspan="20"></td></tr>';
                         case 3:
 			                 echo '<tr><td colspan="1"></td>';
@@ -74,6 +74,7 @@ include 'config.php';
                             echo '</tr>';                           
                       }
                 }
+			break;
         	}
             echo '</table></div></li>';
     	}
