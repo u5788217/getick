@@ -16,9 +16,9 @@ include 'config.php';
                             </tr>';
 		foreach ($oConn->query("SELECT * FROM zone WHERE id_round = '$roundid'") as $aRow3) {
 			echo '<tr>
-                        <td>'.$aRow3['name_zone'].'</td>
-                        <td>'.$aRow3['price'].'</td>
-			<td>30</td>
+                        <td id="'.$aRow3['name_zone'].'">'.$aRow3['name_zone'].'</td>
+                        <td id="'.$aRow3['name_zone'].'">'.$aRow3['price'].'</td>
+			<td id="'.$aRow3['name_zone'].'">30</td>
                     	</tr>';
 		}
 	}
