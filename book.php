@@ -9,19 +9,32 @@
 	<div id="body">
 		<h1><span>Booking ticket</span></h1>
 		<div>
-			<ul>
+			<ul>	
+				<form method="get">
 				<?php include 'book_db.php';?>
 				<li>
-                    <div style="margin-left: 200px;">
-                        <h2>Selected seat: A20 A21</h2>
-                        <h2>Total price: 10000 Baht</h2>
-                        <input type="button" value="BOOK" name="BOOK">
-                    </div>
-                </li>
-				<?php include 'book_ajax.php';?>
+                    		<div style="margin-left: 200px;">
+                        	<h2 id = "demo"></h2>
+                        	<input type="submit" value="BOOK">
+                    		</div>
+                		</li>
+				</form>
 			</ul>
 		</div>
 	</div>
 	<?php include 'footer.php';?>
 </body>
+<script>
+function showCheck(str) {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML =
+      this.responseText;
+    }
+  };
+  xhttp.open("GET", "book_ajax.php?="+str,true);
+  xhttp.send();
+}
+</script>
 </html>
