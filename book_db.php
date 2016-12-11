@@ -62,7 +62,7 @@ include 'config.php';
 							$j=$aRow['id_seat'];	
 							if($j==9 || $j==25 || $j==41 || $j==57 || $j==73 || $j ==89){echo '<td colspan="2"></td>';}
 							if($aRow['id_booking'] == NULL){
-								echo '<td id="B">B'.$aRow['id_seat'].'<br><input type="checkbox" value="'.$aRow['id_seat'].'"></td>';
+								echo '<td id="B">B'.$aRow['id_seat'].'<br><input type="checkbox" value="'.$aRow['id_seat'].'" onclick="showCheck(this.value)"></td>';
 							}   
 							else{echo '<td id="B">B'.$aRow['id_seat'].'<br></td>';}
 							if($j%16==0) {
