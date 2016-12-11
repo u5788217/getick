@@ -4,7 +4,6 @@ include 'config.php';
    $id = explode("+",$_GET['str']);
    $seatid = $id[0];
    $zoneid = $id[1];
-  	echo $zoneid;
-	echo ' '.$seatid;
-	$oConn = null;
+   echo $id[1].$seatid;
+   $oConn = null;
 ?>
