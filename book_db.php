@@ -35,7 +35,7 @@ include 'config.php';
 			    case 2:case 4:case 6:case 8:
                             echo '<tr><td colspan="20"></td></tr>';
                         case 3:
-			     echo '<tr><td colspan="1"></td>';
+			     echo '<tr><td colspan="1"></td> '.$j.'A';
                              for($j=1; $j<=56; $j++){
                                 if(strcmp($aRow['$id_seat'],$j.'A') == 0){
                                     if($j==8 || $j==22 || $j==36 || $j==50){echo '<td colspan="4"></td>';}
