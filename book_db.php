@@ -16,21 +16,21 @@ include 'config.php';
                             </tr>';
 		foreach ($oConn->query("SELECT * FROM zone WHERE id_round = '$roundid'") as $aRow3) {
 			if($aRow3['name_zone'] == 'A'){
-				echo	'<tr>
+				echo '<tr>
                         	<td id='A'>'.$aRow3['name_zone'].'</td>
                         	<td id='A'>'.$aRow3['price'].'</td>
 				<td>30</td>
                     		</tr>';
 			}
-			if($aRow3['name_zone'] == 'B'){
-				echo	'<tr>
+			else if($aRow3['name_zone'] == 'B'){
+				echo '<tr>
                         	<td id='B'>'.$aRow3['name_zone'].'</td>
                         	<td id='B'>'.$aRow3['price'].'</td>
 				<td>30</td>
 				</tr>';
 			}
-			if($aRow3['name_zone'] == 'C'){
-				echo	'<tr>
+			else if($aRow3['name_zone'] == 'C'){
+				echo '<tr>
                         	<td id='C'>'.$aRow3['name_zone'].'</td>
                         	<td id='C'>'.$aRow3['price'].'</td>
 				<td>30</td>
