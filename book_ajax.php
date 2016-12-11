@@ -9,6 +9,7 @@ include 'config.php';
 		$price=$aRow2['price'];
 	}
 	echo $zoneid.$seatid;
+	print_r($zoneid); print_r($seatid);
 	echo 'Total price : '.$total;
 	$oConn = null;
 ?>
