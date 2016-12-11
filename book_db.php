@@ -15,11 +15,13 @@ include 'config.php';
                                 <td>Available seat</td>
                             </tr>';
 		foreach ($oConn->query("SELECT * FROM zone WHERE id_round = '$roundid'") as $aRow3) {
+			$zone = $aRow3['id_zone'];
 			echo '<tr>
                         <td id="'.$aRow3['name_zone'].'">'.$aRow3['name_zone'].'</td>
                         <td id="'.$aRow3['name_zone'].'">'.$aRow3['price'].'</td>
-			<td id="'.$aRow3['name_zone'].'">30</td>
-                    	</tr>';
+			<td id="'.$aRow3['name_zone'].'">';
+			echo $oConn->query("SELECT COUNT(*) FROM seat WHERE id_zone = '$zone' AND id_booking == NULL");
+			echo '</td></tr>';
 		}
 	}
 	echo '</table></div></li><li><div style="width: 940px;" class="seat-style"><table>';
@@ -43,7 +45,7 @@ include 'config.php';
 					    	foreach ($oConn->query("SELECT * FROM seat WHERE id_zone = '$zoneid[0]'") as $aRow) {
 							$j=$aRow['id_seat'];
 							if($j==8 || $j==22 || $j==36 || $j==50){echo '<td colspan="4"></td>';}
-							if($aRow['$id_booking'] == NULL){
+							if($aRow['id_booking'] == NULL){
 								echo '<td id="A">'.$aRow['id_seat'].'<br><input type="checkbox" value="'.$aRow['id_seat'].'"></td>';
 							} 
 						   	else {echo '<td id="A">'.$aRow['id_seat'].'<br></td>';}
