@@ -11,6 +11,7 @@
 		<div>
 			<ul>
 				<?php include 'book_db.php';?>
+				<?php include 'book_ajax.php';?>
 			</ul>
 		</div>
 	</div>
