@@ -2,7 +2,8 @@
 $x = 1; 
 
 while($x <= 5) {
-    echo "The number is: $x <br>";
+    $r = $x.'A';
+    echo 'The number is: '.$s.' <br>';
     $x++;
 } 
 ?>
