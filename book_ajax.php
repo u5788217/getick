@@ -5,9 +5,9 @@ include 'config.php';
    $seatid = $id[0];
    $zoneid = $id[1];
    $price;
-	foreach ($oConn->query("SELECT * FROM zone WHERE id_zone = '$zoneid'") as $aRow2) {
-		$price=$aRow2['price'];
-	}
+   foreach ($oConn->query("SELECT * FROM zone WHERE id_zone = '$zoneid'") as $aRow) {
+		$price=$aRow['price'];
+   }
 	echo $seatid;
 	echo $zoneid;
 	echo 'Total price : '.$price;
