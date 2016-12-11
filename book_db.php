@@ -23,7 +23,66 @@ include 'config.php';
                      </tr>';
 		}
 	}
-	echo '</table></div></li>';
+	echo '</table></div></li>
+    <li><div style="width: 940px;" class="seat-style"><table>';
+    foreach ($oConn->query("SELECT * FROM seat WHERE id_round = '$roundid'") as $aRow) {
+        switch ($roundid) {
+            case 1,2,6,10,14,15:
+                for($i=1; $i<=8; $i++){
+                    switch ($i) {
+                        case 1:
+                            echo '<tr><td colspan="6"></td><td colspan="8" style="background-color: white;">STAGE</td>
+                            <td colspan="6"></td></tr>';
+                        case 2,4,6,8:
+                            echo '<tr><td colspan="20"></td></tr>';
+                        case 3:
+                            echo '<tr><td colspan="1"></td>';
+                            for($j=1; $j<=56; $j++){
+                                if($aRow['$id_seat'] == $j.'A'){
+                                    if($j==8 || $j==22 || $j==36 || $j==50)
+                                        echo '<td colspan="4"></td>';
+                                    if($aRow['$id_booking'] != NULL)
+                                        echo '<td id="A">'.$aRow['$id_seat'].'<br><input type="checkbox" value="'.$aRow['$id_seat'].'"></td>';
+                                    else
+                                        echo '<td id="A">'.$aRow['$id_seat'].'<br></td>';
+                                    if($j%14==0)
+                                        echo '<td colspan="1"></td><tr><td colspan="1"></td>';
+                                }
+                            }
+                            echo '</tr>';
+                        case 5:
+                            echo '<tr><td colspan="1"></td>';
+                            for($j=1; $j<=96; $j++){
+                                if($aRow['$id_seat'] == $j.'B'){
+                                    if($j==9 || $j==25 || $j==41 || $j==57 || $j==73 || $j ==89)
+                                        echo '<td colspan="4"></td>';
+                                    if($aRow['$id_booking'] != NULL)
+                                        echo '<td id="B">'.$aRow['$id_seat'].'<br><input type="checkbox" value="'.$aRow['$id_seat'].'"></td>';
+                                    else
+                                        echo '<td id="B">'.$aRow['$id_seat'].'<br></td>';
+                                    if($j%16==0)
+                                        echo '<td colspan="1"></td><tr><td colspan="1"></td>';
+                                }
+                            }
+                            echo '</tr>';
+                        case 7:
+                            echo '<tr><td colspan="1"></td>';
+                            for($j=1; $j<=90; $j++){
+                                    if($aRow['$id_booking'] != NULL)
+                                        echo '<td id="C">'.$aRow['$id_seat'].'<br><input type="checkbox" value="'.$aRow['$id_seat'].'"></td>';
+                                    else
+                                        echo '<td id="C">'.$aRow['$id_seat'].'<br></td>';
+                                    if($j%18==0)
+                                        echo '<td colspan="1"></td><tr><td colspan="1"></td>';
+                                }
+                            }
+                            echo '</tr>';                           
+                    }
+                }
+        
+        }
+        echo ' </table></div></li>';
+    }
 	$oConn = null;
 ?>
 
