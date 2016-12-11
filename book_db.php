@@ -49,7 +49,7 @@ include 'config.php';
 							if($aRow['id_booking'] == NULL){
 								echo '<td id="A">A'.$aRow['id_seat'].'<br><input type="checkbox" value="'.$aRow['id_seat'].'&'.$zoneid[0].'" onclick="showCheck(this.value)" ></td>';
 							} 
-						   	else {echo '<td id="A">A'.$aRow['id_seat'].'<br></td>';}
+						   	else {echo '<td id="Ac">A'.$aRow['id_seat'].'<br></td>';}
 							if($j%14==0) {
 								if($j == 56) echo '<td colspan="1"></td>';
 								else echo '<td colspan="1"></td><tr><td colspan="1"></td>';
@@ -64,7 +64,7 @@ include 'config.php';
 							if($aRow['id_booking'] == NULL){
 								echo '<td id="B">B'.$aRow['id_seat'].'<br><input type="checkbox" value="'.$aRow['id_seat'].'"></td>';
 							}   
-							else{echo '<td id="B">B'.$aRow['id_seat'].'<br></td>';}
+							else{echo '<td id="Bc">B'.$aRow['id_seat'].'<br></td>';}
 							if($j%16==0) {
 								if($j == 96) echo '<td colspan="1"></td>';
 								else echo '<td colspan="1"></td><tr><td colspan="1"></td>';
@@ -78,7 +78,7 @@ include 'config.php';
 							if($aRow['id_booking'] == NULL){
 								echo '<td id="C">C'.$aRow['id_seat'].'<br><input type="checkbox" value="'.$aRow['id_seat'].'"></td>';
 							}
-							else{echo '<td id="C">C'.$aRow['id_seat'].'<br></td>';}
+							else{echo '<td id="Cc">C'.$aRow['id_seat'].'<br></td>';}
 							if($j%18==0) {
 								if($j == 90) echo '<td colspan="1"></td>';
 								else echo '<td colspan="1"></td><tr><td colspan="1"></td>';
@@ -105,7 +105,7 @@ include 'config.php';
 							if($aRow['$id_booking'] == NULL){
 								echo '<td id="A">A'.$aRow['id_seat'].'<br><input type="checkbox" value="'.$aRow['id_seat'].'"></td>';
 							} 
-						   	else {echo '<td id="A">A'.$aRow['id_seat'].'<br></td>';}
+						   	else {echo '<td id="Ac">A'.$aRow['id_seat'].'<br></td>';}
 							if($j%16==0) {
 								if($j == 128) echo '<td colspan="1"></td>';
 								else echo '<td colspan="1"></td><tr><td colspan="1"></td>';
@@ -120,7 +120,7 @@ include 'config.php';
 							if($aRow['id_booking'] == NULL){
 								echo '<td id="B">B'.$aRow['id_seat'].'<br><input type="checkbox" value="'.$aRow['id_seat'].'"></td>';
 							}   
-							else{echo '<td id="B">B'.$aRow['id_seat'].'<br></td>';}
+							else{echo '<td id="Bc">B'.$aRow['id_seat'].'<br></td>';}
 							if($j%16==0) {
 								if($j == 48) echo '<td colspan="1"></td>';
 								else echo '<td colspan="1"></td><tr><td colspan="1"></td>';
@@ -134,7 +134,7 @@ include 'config.php';
 							if($aRow['id_booking'] == NULL){
 								echo '<td id="C">C'.$aRow['id_seat'].'<br><input type="checkbox" value="'.$aRow['id_seat'].'"></td>';
 							}
-							else{echo '<td id="C">C'.$aRow['id_seat'].'<br></td>';}
+							else{echo '<td id="Cc">C'.$aRow['id_seat'].'<br></td>';}
 							if($j%18==0) {
 								if($j == 72) echo '<td colspan="1"></td>';
 								else echo '<td colspan="1"></td><tr><td colspan="1"></td>';
@@ -159,7 +159,7 @@ include 'config.php';
 							if($aRow['$id_booking'] == NULL){
 								echo '<td id="A">A'.$aRow['id_seat'].'<br><input type="checkbox" value="'.$aRow['id_seat'].'"></td>';
 							} 
-						   	else {echo '<td id="A">A'.$aRow['id_seat'].'<br></td>';}
+						   	else {echo '<td id="Ac">A'.$aRow['id_seat'].'<br></td>';}
 							if($j%12==0) {
 								if($j == 36) echo '<td colspan="4"></td>';
 								else echo '<td colspan="4"></td><tr><td colspan="4"></td>';
@@ -174,7 +174,7 @@ include 'config.php';
 							if($aRow['id_booking'] == NULL){
 								echo '<td id="B">B'.$aRow['id_seat'].'<br><input type="checkbox" value="'.$aRow['id_seat'].'"></td>';
 							}   
-							else{echo '<td id="B">B'.$aRow['id_seat'].'<br></td>';}
+							else{echo '<td id="Bc">B'.$aRow['id_seat'].'<br></td>';}
 							if($j%16==0) {
 								if($j == 80) echo '<td colspan="1"></td>';
 								else echo '<td colspan="1"></td><tr><td colspan="1"></td>';
@@ -188,7 +188,7 @@ include 'config.php';
 							if($aRow['id_booking'] == NULL){
 								echo '<td id="C">C'.$aRow['id_seat'].'<br><input type="checkbox" value="'.$aRow['id_seat'].'"></td>';
 							}
-							else{echo '<td id="C">C'.$aRow['id_seat'].'<br></td>';}
+							else{echo '<td id="Cc">C'.$aRow['id_seat'].'<br></td>';}
 							if($j%16==0) {
 								if($j == 96) echo '<td colspan="2"></td>';
 								else echo '<td colspan="2"></td><tr><td colspan="2"></td>';
