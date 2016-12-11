@@ -337,7 +337,7 @@ p a:hover {
 	padding: 24px 0 0;
 	width: 620px;
 }
-#body form .login, #body form textarea {
+.login, #body form textarea {
 	border: 2px solid #252525;
 	color: #252525;
 	font-family: Arial, Helvetica, sans-serif;
