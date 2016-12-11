@@ -28,7 +28,6 @@ include 'config.php';
 	$l=0;
   	foreach ($oConn->query("SELECT * FROM zone WHERE id_round = '$roundid'") as $aRow3) {
 		$zoneid[$l] = $aRow3['id_zone'];
-		echo $zoneid[$l];
 		$l++;
 	}
 	switch ($roundid) {
