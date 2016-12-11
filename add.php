@@ -3,288 +3,333 @@
 include 'config.php';
    $oConn = connect_db();
 $x = 1; 
+$y = 1;
 while($x <= 56) {
     $r = $x.'A';
-    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$r', '1')");
+    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$x', '$y')");
      echo $r;
     $x++;
 } 
-$x = 1; 
+$x = 1;
+$y++;
 while($x <= 96) {
     $r = $x.'B';
-    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$r', '1')");
+    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$x', '$y')");
      echo $r;
     $x++;
 } 
 $x = 1; 
+$y++;
 while($x <= 90) {
     $r = $x.'C';
-    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$r', '1')");
+    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$x', '$y')");
      echo $r;
     $x++;
 } 
 $x = 1; 
+$y++;
 while($x <= 56) {
     $r = $x.'A';
-    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$r', '2')");
+    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$x', '$y')");
      echo $r;
     $x++;
 } 
 
-$x = 1; 
+$x = 1;
+$y++;
 while($x <= 96) {
     $r = $x.'B';
-    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$r', '2')");
+    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$x', '$y')");
      echo $r;
     $x++;
 }
 
-$x = 1; 
+$x = 1;
+$y++;
 while($x <= 90) {
     $r = $x.'C';
-    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$r', '2')");
+    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$x', '$y')");
      echo $r;
     $x++;
 }
 
-$x = 1; 
+$x = 1;
+$y++;
 while($x <= 108) {
     $r = $x.'A';
-    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$r', '3')");
+    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$x', '$y')");
      echo $r;
     $x++;
 }
 
-$x = 1; 
+$x = 1;
+$y++;
 while($x <= 48) {
     $r = $x.'B';
-    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$r', '3')");
+    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$x', '$y')");
      echo $r;
     $x++;
 }
 
-$x = 1; 
+$x = 1;
+$y++;
 while($x <= 72) {
     $r = $x.'C';
-    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$r', '3')");
+    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$x', '$y')");
      echo $r;
     $x++;
 }
-$x = 1; 
+$x = 1;
+$y++;
 while($x <= 36) {
     $r = $x.'A';
-    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$r', '4')");
+    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$x', '$y')");
      echo $r;
     $x++;
-}$x = 1; 
+}$x = 1;
+$y++;
 while($x <= 80) {
     $r = $x.'B';
-    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$r', '4')");
+    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$x', '$y')");
      echo $r;
     $x++;
-}$x = 1; 
+}$x = 1;
+$y++;
 while($x <= 96) {
     $r = $x.'C';
-    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$r', '4')");
+    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$x', '$y')");
      echo $r;
     $x++;
-}$x = 1; 
+}$x = 1;
+$y++;
 while($x <= 36) {
     $r = $x.'A';
-    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$r', '5')");
+    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$x', '$y')");
      echo $r;
     $x++;
-}$x = 1; 
+}$x = 1;
+$y++;
 while($x <= 80) {
     $r = $x.'B';
-    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$r', '5')");
+    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$x', '$y')");
      echo $r;
     $x++;
-}$x = 1; 
+}$x = 1;
+$y++;
 while($x <= 96) {
     $r = $x.'C';
-    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$r', '5')");
+    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$x', '$y')");
      echo $r;
     $x++;
-}$x = 1; 
+}$x = 1;
+$y++;
 while($x <= 56) {
     $r = $x.'A';
-    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$r', '6')");
+    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$x', '$y')");
      echo $r;
     $x++;
-}$x = 1; 
+}$x = 1;
+$y++;
 while($x <= 96) {
     $r = $x.'B';
-    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$r', '6')");
+    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$x', '$y')");
      echo $r;
     $x++;
-}$x = 1; 
+}$x = 1;
+$y++;
 while($x <= 90) {
     $r = $x.'C';
-    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$r', '6')");
+    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$x', '$y')");
      echo $r;
     $x++;
-}$x = 1; 
+}$x = 1;
+$y++;
 while($x <= 108) {
     $r = $x.'A';
-    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$r', '7')");
+    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$x', '$y')");
      echo $r;
     $x++;
-}$x = 1; 
+}$x = 1;
+$y++;
 while($x <= 48) {
     $r = $x.'B';
-    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$r', '7')");
+    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$x', '$y')");
      echo $r;
     $x++;
-}$x = 1; 
+}$x = 1;
+$y++;
 while($x <= 72) {
     $r = $x.'C';
-    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$r', '7')");
+    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$x', '$y')");
      echo $r;
     $x++;
-}$x = 1; 
+}$x = 1;
+$y++;
 while($x <= 36) {
     $r = $x.'A';
-    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$r', '8')");
+    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$x', '$y')");
      echo $r;
     $x++;
-}$x = 1; 
+}$x = 1;
+$y++;
 while($x <= 80) {
     $r = $x.'B';
-    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$r', '8')");
+    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$x', '$y')");
      echo $r;
     $x++;
-}$x = 1; 
+}$x = 1;
+$y++;
 while($x <= 96) {
     $r = $x.'C';
-    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$r', '8')");
+    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$x', '$y')");
      echo $r;
     $x++;
-}$x = 1; 
+}$x = 1;
+$y++;
 while($x <= 36) {
     $r = $x.'A';
-    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$r', '9')");
+    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$x', '$y')");
      echo $r;
     $x++;
-}$x = 1; 
+}$x = 1;
+$y++;
 while($x <= 80) {
     $r = $x.'B';
-    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$r', '9')");
+    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$x', '$y')");
      echo $r;
     $x++;
-}$x = 1; 
+}$x = 1;
+$y++;
 while($x <= 96) {
     $r = $x.'C';
-    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$r', '9')");
+    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$x', '$y')");
      echo $r;
     $x++;
-}$x = 1; 
+}$x = 1;
+$y++;
 while($x <= 56) {
     $r = $x.'A';
-    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$r', '10')");
+    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$x', '$y')");
      echo $r;
     $x++;
 }
-$x = 1; 
+$x = 1;
+$y++;
 while($x <= 96) {
     $r = $x.'B';
-    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$r', '10')");
+    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$x', '$y')");
      echo $r;
     $x++;
-}$x = 1; 
+}$x = 1;
+$y++;
 while($x <= 90) {
     $r = $x.'C';
-    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$r', '10')");
+    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$x', '$y')");
      echo $r;
     $x++;
-}$x = 1; 
+}$x = 1;
+$y++;
 while($x <= 108) {
     $r = $x.'A';
-    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$r', '11')");
+    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$x', '$y')");
      echo $r;
     $x++;
-}$x = 1; 
+}$x = 1;
+$y++;
 while($x <= 48) {
     $r = $x.'B';
-    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$r', '11')");
+    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$x', '$y')");
      echo $r;
     $x++;
-}$x = 1; 
+}$x = 1;
+$y++;
 while($x <= 72) {
     $r = $x.'C';
-    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$r', '11')");
+    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$x', '$y')");
      echo $r;
     $x++;
-}$x = 1; 
+}$x = 1;
+$y++;
 while($x <= 36) {
     $r = $x.'A';
-    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$r', '12')");
+    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$x', '$y')");
      echo $r;
     $x++;
-}$x = 1; 
+}$x = 1;
+$y++;
 while($x <= 80) {
     $r = $x.'B';
-    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$r', '12')");
+    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$x', '$y')");
      echo $r;
     $x++;
-}$x = 1; 
+}$x = 1;
+$y++;
 while($x <= 96) {
     $r = $x.'C';
-    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$r', '12')");
+    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$x', '$y')");
      echo $r;
     $x++;
-}$x = 1; 
+}$x = 1;
+$y++;
 while($x <= 36) {
     $r = $x.'A';
-    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$r', '13')");
+    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$x', '$y')");
      echo $r;
     $x++;
-}$x = 1; 
+}$x = 1;
+$y++;
 while($x <= 80) {
     $r = $x.'B';
-    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$r', '13')");
+    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$x', '$y')");
      echo $r;
     $x++;
-}$x = 1; 
+}$x = 1;
+$y++;
 while($x <= 96) {
     $r = $x.'C';
-    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$r', '13')");
+    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$x', '$y')");
      echo $r;
     $x++;
-}$x = 1; 
+}$x = 1;
+$y++;
 while($x <= 56) {
     $r = $x.'A';
     $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$r', '14')");
      echo $r;
     $x++;
-}$x = 1; 
+}$x = 1;
+$y++;
 while($x <= 96) {
     $r = $x.'B';
-    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$r', '14')");
+    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$x', '$y')");
      echo $r;
     $x++;
-}$x = 1; 
+}$x = 1;
+$y++;
 while($x <= 90) {
     $r = $x.'C';
-    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$r', '14')");
+    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$x', '$y')");
      echo $r;
     $x++;
-}$x = 1; 
+}$x = 1;
+$y++;
 while($x <= 56) {
     $r = $x.'A';
-    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$r', '15')");
+    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$x', '$y')");
      echo $r;
     $x++;
-}$x = 1; 
+}$x = 1;
+$y++;
 while($x <= 96) {
     $r = $x.'B';
-    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$r', '15')");
+    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$x', '$y')");
      echo $r;
     $x++;
-}$x = 1; 
+}$x = 1;
+$y++;
 while($x <= 90) {
     $r = $x.'C';
-    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$r', '15')");
+    $oConn->query("INSERT INTO seat (id_seat,id_zone) VALUES ('$x', '$y')");
      echo $r;
     $x++;
 }
