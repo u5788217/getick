@@ -13,6 +13,7 @@ if($_GET['fname'] != null){
 	foreach ($oConn->query('SELECT * FROM account') as $aRow) {
 		if($_GET['email'] == $aRow['email'] && $_GET['pwd'] == $aRow['password']){
 			$_SESSION["userid"] = $aRow['idaccount'];
+			if($_GET['fname'] != null) echo "<script type='text/javascript'>alert('Registration was done, now you are loging in.'); </script>";
 			header('Location: /index.php');
 		}
 	}  
