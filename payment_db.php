@@ -54,13 +54,13 @@ echo '<li>
      </div>
     </li>
                 <li>
-		<form method="get" action="updateseat.php">
+	
                     <div style="width:940px">
                         <h3>Please select your payment method</h3>
 			
                         <table style="width:850px; margin-left:50px;">
                             <tr>
-                                <td>
+                                <td> 	<form method="get" action="updateseat.php">
                                     <h2>Credit card payment</h2>
                                     <img src="images/payment-01.png" style="width:100px; height:70px;">
                                     <br><input type="radio" name="payment" value="Credit card payment">
