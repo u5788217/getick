@@ -11,6 +11,6 @@ $oConn = connect_db();
                                  <tr><td>'.$aRow['id_round'].'</td><td><a href="#" onclick="document.getElementById('sentform').submit();">'
                                .$aRow['name_concert'].'</a></td><td> '.$aRow['date'].'</td><td>'.$aRow['time'].'</td></tr>';
                         }
-                  echo'</table></from></div></li>';
+                  echo'</table></form></div></li>';
 $oConn = null;
 ?>
