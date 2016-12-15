@@ -14,7 +14,7 @@ include 'config.php';
 		for($x = 0; $x < sizeof($seats); $x++){
 			$oConn->query("UPDATE seat SET id_booking ='$max' WHERE id_seat = '$seats[$x]' AND id_zone = '$zones[$x]'");
 		}
-	
+	echo "<script type='text/javascript'>alert('Done.'); window.location = 'index.php';</script>";
 	}
 	$oConn = null;
 ?>
