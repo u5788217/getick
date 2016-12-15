@@ -4,25 +4,52 @@ include 'config.php';
 $tickets = $_GET['ticket'];
 $number = sizeof($tickets);
 $oConn = connect_db();
-$roundID = array(); 
+$zoneID = array(); 
 $seatID = array();
 for($x = 0; $x < $number; $x++){
 	$seat = explode(" ", $tickets[$x]);
 	array_push($seatID,$seat[0]);
-	array_push($roundID,$seat[1]);
+	array_push($zoneID,$seat[1]);
 }  
-foreach ($oConn->query('SELECT * FROM concert') as $aRow) {
-        	$conid = $aRow['id_concert'];
-		echo '<li>
-     <a href="blog-single-post.html" class="figure">
-      <img src="images/concert/2Linkin-Park.png" alt="">
+$roundid;
+$total = 0;
+$conid;
+$date;
+$time;
+$conname;
+$poster;
+$seatprint = array();
+for($x = 0; $x < sizeof($zoneID); $x++){
+	foreach ($oConn->query('SELECT zone FROM round WHERE id_zone = "$zoneID[$x]"') as $aRow) {
+		$total += $aRow['price'];
+		array_push($seatprint,$aRow['name_zone'].$seatID[$x]);
+		$roundid = $aRow['id_round'];
+	}
+}
+foreach ($oConn->query('SELECT id_concert FROM round WHERE id_round = "$roundID"') as $aRow2) {
+	$conid = $aRow2['id_concert'];
+	$date = $aRow2['date'];
+	$time = $aRow2['time'];
+}	
+foreach ($oConn->query('SELECT * FROM concert WHERE id_concert = "$conid"') as $aRow3) {
+        $conname = $aRow3['name_concert'];
+	$poster = $aRow3['poster_concert'];
+}
+
+echo '<li>
+     <a href="" class="figure">
+      <img src='.$poster.' alt="">
      </a>
      <div>
-      <h3>Linkin Park</h3>
-                        <h2>Date: 20 Jan 2017 ,Time: 10:00 ~ 15:00</h2>
+      <h3>'.$conname.'</h3>
+                        <h2>Date: '.$date.' ,Time: '.$time.'</h2>
                         <a>===================================================</a>
-                        <h2>Selected seat: A20 A21</h2>
-                        <h2>Total price: 10000 Baht</h2>
+                        <h2>Selected seat: ';
+		for($x = 0; $x < sizeof($seatprint); $x++){
+			echo 	$seatprint[$x]." ";
+		}
+			echo '</h2>
+                        <h2>Total price: '.$total.' Baht</h2>
      </div>
     </li>
                 <li>
