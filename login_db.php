@@ -14,7 +14,7 @@ if($_GET['fname'] != null){
 		if($_GET['email'] == $aRow['email'] && $_GET['pwd'] == $aRow['password']){
 			$_SESSION["userid"] = $aRow['idaccount'];
 			if($_GET['fname'] != null) echo "<script type='text/javascript'>alert('Registration was done, now you are loging in.'); </script>";
-			header('Location: /admin.php');
+			header('Location: /index.php');
 		}
 	}  
 $oConn->execute();
