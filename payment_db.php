@@ -9,7 +9,7 @@ $seatID = array();
 for($x = 0; $x < $number; $x++){
 	if($x%2 == 0) echo " ".$x;
 	array_push($seatID,$tickets[$x]);
-	else array_push($roundID,$tickets[$x]);
+	array_push($roundID,$tickets[$x]);
 }  
 for($x = 0; $x < sizeof($seatID); $x++){
 	echo $seatID[$x]." ";
