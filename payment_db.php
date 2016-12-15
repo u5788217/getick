@@ -79,6 +79,5 @@ echo '<li>
                         <input type="button" value="CONFIRM" name="BOOK">
                     </div>
                 </li>';
-	}
 	$oConn = null;
 ?>
