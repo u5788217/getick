@@ -12,7 +12,7 @@ session_start();
 	<div id="body">
 		
 		<h1><span>Payment</span></h1>
-		<div style="margin-left:0;"> <form method="get" action="updateseat.php">
+		<div> <form method="get" action="updateseat.php" style="margin:0;">
 			<ul>	
 			 <?php include 'payment_db.php';?>
 			</ul>
