@@ -54,9 +54,10 @@ echo '<li>
      </div>
     </li>
                 <li>
+		<form method="get" action="updateseat.php">
                     <div style="width:940px">
                         <h3>Please select your payment method</h3>
-			<form method="get" action="updateseat.php">
+			
                         <table style="width:850px; margin-left:50px;">
                             <tr>
                                 <td>
@@ -77,7 +78,11 @@ echo '<li>
                             </tr>
                         </table>
                     </div>
-                </li>
+                </li> ';
+		for($x = 0; $x < sizeof($seatID); $x++){
+			echo 	'<input hidden type="text" name="seat[]" value="'.$seatID[$x].'">'; 
+		}
+			echo 	'<input hidden type="text" name="total" value="'.$total.'">
 			<input type="submit" value="CONFIRM"></form>';
 	$oConn = null;
 ?>
