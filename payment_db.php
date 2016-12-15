@@ -78,9 +78,9 @@ echo '<li>
                         </table>
                         <br>';
 	for($x = 0; $x < sizeof($seatID); $x++){
-			echo 	'<input type="text" name="seat[]" value="'.$seatID[$x].'t">'; 
+			echo 	'<input hidden type="text" name="seat[]" value="'.$seatID[$x].'">'; 
 		}
-			echo 	'<input type="text" name="total" value="'.$total.'t">'; 
+			echo 	'<input hidden type="text" name="total" value="'.$total.'">'; 
                         echo '<input type="submit" value="CONFIRM">
 			</form>
                     </div>
