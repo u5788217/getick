@@ -10,7 +10,7 @@ session_start();
 			</li>';
 			if ($_SESSION["userid"]==11)
 			echo '<li>
-				<a href="admin.php">logout</a>
+				<a href="admin.php">concerts</a>
 			     </li>';
 			else{ echo '<li>
 				<a href="concert.php">concerts</a>
