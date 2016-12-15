@@ -1,7 +1,7 @@
 <?php
 include 'config.php';
    $oConn = connect_db();
-   $roundid = $_GET['roundid'];
+   $roundid = $_GET['round'];
 	foreach ($oConn->query("SELECT * FROM round WHERE id_round = '$roundid'") as $aRow) {
 		$conid = $aRow['id_concert'];
 		foreach ($oConn->query("SELECT * FROM concert WHERE id_concert = '$conid'") as $aRow2) {
