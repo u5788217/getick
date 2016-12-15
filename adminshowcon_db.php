@@ -5,7 +5,7 @@ include 'config.php';
 	foreach ($oConn->query("SELECT * FROM round WHERE id_round = '$roundid'") as $aRow) {
 		$conid = $aRow['id_concert'];
 		foreach ($oConn->query("SELECT * FROM concert WHERE id_concert = '$conid'") as $aRow2) {
-			echo	'<li><div><h3>'.$aRow2['name_concert'].'</h3>';
+			echo	'<li><div style="width: 940px;"><h3>'.$aRow2['name_concert'].'</h3>';
 		}
 		echo '<h2>'.$aRow['date'].'<br> Time: '.$aRow['time'].'</h2><table border=1 style="width:300px; margin-left: 130px;">
                             <tr>
