@@ -76,13 +76,8 @@ echo '<li>
                                 </td>
                             </tr>
                         </table>
-                        <br>
                     </div>
-                </li>';
-		for($x = 0; $x < sizeof($seatID); $x++){
-			echo 	'<input hidden type="text" name="seat[]" value="'.$seatID[$x].'">'; 
-		}
-			echo 	'<input hidden type="text" name="total" value="'.$total.'">
+                </li>
 			<input type="submit" value="CONFIRM"></form>';
 	$oConn = null;
 ?>
