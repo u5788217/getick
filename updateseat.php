@@ -12,7 +12,7 @@ include 'config.php';
 	foreach ($oConn->query("SELECT MAX(id_booking) AS max FROM booking") as $aRow) {
 		$max = $aRow['max'];
 		for($x = 0; $x < sizeof($seats); $x++){
-			$oConn->query("UPDATE seat SET id_booking ='$max' WHERE id_seat = '$seats[$x]' AND id_zone = '$zones[$x]");
+			$oConn->query("UPDATE seat SET id_booking ='$max' WHERE id_seat = '$seats[$x]' AND id_zone = '$zones[$x]'");
 		}
 	
 	}
