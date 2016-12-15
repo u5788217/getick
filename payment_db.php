@@ -37,7 +37,7 @@ foreach ($oConn->query("SELECT * FROM concert WHERE id_concert = '$conid'") as $
 	$poster = $aRow3['poster_concert'];
 }
 
-echo '<form method="get" action="updateseat.php"><li>
+echo '<li>
      <a href="" class="figure">
       <img src='.$poster.' alt="">
      </a>
