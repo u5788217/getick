@@ -7,10 +7,14 @@ session_start();
 		<ul id="navigation">
 			<li class="selected">
 				<a href="index.php">home</a>
-			</li>
-			<li>
-				<a href="concert.php">concerts</a>
 			</li>';
+			if ($_SESSION["userid"]==11)
+			echo '<li>
+				<a href="admin.php">logout</a>
+			     </li>';
+			else{ echo '<li>
+				<a href="concert.php">concerts</a>
+			     </li>';}
 			
 			if (!$_SESSION["userid"])
 			echo '<li>
