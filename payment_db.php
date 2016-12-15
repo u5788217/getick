@@ -20,21 +20,19 @@ $conname;
 $poster;
 $seatprint = array();
 for($x = 0; $x < sizeof($zoneID); $x++){
-	echo $zoneID[$x];
-	$z = $zoneID[$x];
-	foreach ($oConn->query('SELECT * FROM round WHERE id_zone = "$z"') as $aRow) {
+	foreach ($oConn->query("SELECT * FROM round WHERE id_zone = '$zoneID[$x]'") as $aRow) {
 		$total += $aRow['price'];
 		echo $seatID[$x];
 		array_push($seatprint,$aRow['name_zone'].$seatID[$x]);
 		$roundid = $aRow['id_round'];
 	}
 }
-foreach ($oConn->query('SELECT * FROM round WHERE id_round = "$roundID"') as $aRow2) {
+foreach ($oConn->query("SELECT * FROM round WHERE id_round = '$roundID'") as $aRow2) {
 	$conid = $aRow2['id_concert'];
 	$date = $aRow2['date'];
 	$time = $aRow2['time'];
 }	
-foreach ($oConn->query('SELECT * FROM concert WHERE id_concert = "$conid"') as $aRow3) {
+foreach ($oConn->query("SELECT * FROM concert WHERE id_concert = '$conid'") as $aRow3) {
         $conname = $aRow3['name_concert'];
 	$poster = $aRow3['poster_concert'];
 }
