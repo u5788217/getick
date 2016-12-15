@@ -76,13 +76,13 @@ echo '<form method="get" action="updateseat.php"><li>
                                     <br><input type="radio" name="payment" value="Mobile payment">
                                 </td>
                             </tr>
-			    <br>';
+		        </table>
+                    </div>
+                </li>';
 			    for($x = 0; $x < sizeof($seatID); $x++){
 			echo 	'<input hidden type="text" name="seat[]" value="'.$seatID[$x].'">'; 
 			}	
 			echo 	'<input hidden type="text" name="total" value="'.$total.'">
-		        </table>
-                    </div>
-                </li><input type="submit" value="CONFIRM"></form>';
+		<input type="submit" value="CONFIRM"></form>';
 	$oConn = null;
 ?>
