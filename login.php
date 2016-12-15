@@ -13,7 +13,7 @@
 			<input type="text" name="pwd" id="pwd" placeholder="password" class="login">
 			<input type="submit" name="send" id="send" value="send">
 		</form>
-		<a href="register.php" style="text-decoration: none;display: inline-block; color:#fff;">Register</a>
+		<a href="register.php" style="text-decoration: none;display: inline-block; color:#000;">Register</a>
 	</div>
 	<?php include 'footer.php';?>
 </body>
