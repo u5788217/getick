@@ -11,7 +11,7 @@
 		<form method="get" action="login_db.php">
 			<input type="text" name="email" id="email" placeholder="Email" class="login">
 			<input type="text" name="pwd" id="pwd" placeholder="password" class="login">
-			<input type="submit" name="send" id="send" value="send">
+			<input type="submit" name="send" id="send" value="LOGIN">
 		</form>
 		<a href="register.php" style="text-decoration: none;display: inline-block; color:#000;">Register</a>
 	</div>
