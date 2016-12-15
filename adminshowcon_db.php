@@ -22,7 +22,7 @@ include 'config.php';
 				$available = $aRow4['number'];
 				echo $available.'</td>';
 			}
-			echo '<td>'.$aRow3['price']*($aRow3['numOfSeat']-$available).'</td></tr>';
+			echo '<td id="'.$aRow3['name_zone'].'">'.$aRow3['price']*($aRow3['numOfSeat']-$available).'</td></tr>';
 		}
 	}
 	echo '</table></div></li><li><div style="width: 940px;" class="seat-style"><table>';
