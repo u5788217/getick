@@ -5,20 +5,24 @@ include 'config.php';
 	foreach ($oConn->query("SELECT * FROM round WHERE id_round = '$roundid'") as $aRow) {
 		$conid = $aRow['id_concert'];
 		foreach ($oConn->query("SELECT * FROM concert WHERE id_concert = '$conid'") as $aRow2) {
-			echo	'<li><div style="width: 940px;"><h3>'.$aRow2['name_concert'].'</h3>';
+			echo	'<li><div><h3>'.$aRow2['name_concert'].'</h3>';
 		}
 		echo '<h2>'.$aRow['date'].'<br> Time: '.$aRow['time'].'</h2><table border=1 style="width:300px; margin-left: 130px;">
                             <tr>
                                 <td>ZONE</td>
                                 <td>Available seat</td>
+				<td>Revenue</td>
                             </tr>';
 		foreach ($oConn->query("SELECT * FROM zone WHERE id_round = '$roundid'") as $aRow3) {
 			$zone = $aRow3['id_zone'];
+			$available;
 			echo '<tr>
                         <td id="'.$aRow3['name_zone'].'">'.$aRow3['name_zone'].'</td><td id="'.$aRow3['name_zone'].'">';
 			foreach ($oConn->query("SELECT COUNT(*) AS number FROM seat WHERE id_zone = '$zone' AND id_booking is null ")as $aRow4) {
-				echo $aRow4['number'].'</td></tr>';
+				$available = $aRow4['number'];
+				echo $available.'</td>';
 			}
+			echo '<td>'.$aRow3['price']*($aRow3['numOfSeat']-$available).'</td></tr>';
 		}
 	}
 	echo '</table></div></li><li><div style="width: 940px;" class="seat-style"><table>';
