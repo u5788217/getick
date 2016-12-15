@@ -4,10 +4,17 @@ include 'config.php';
 $tickets = $_GET['ticket'];
 $number = sizeof($tickets);
 $oConn = connect_db();
-
+$roundID = array(); 
+$seatID = array();
 for($x = 0; $x < $number; $x++){
-	echo $tickets[$x]." ";
+	if($x%2==0) array_push($seatID,$tickets[$x]);
+	else array_push($roundID,$tickets[$x]);
 }  
+for($x = 0; $x < sizeof($seatID); $x++){
+	echo $seatID[$x]." ";
+}  
+
+
 	foreach ($oConn->query('SELECT * FROM concert') as $aRow) {
         	$conid = $aRow['id_concert'];
 		echo '<li>
