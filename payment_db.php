@@ -12,7 +12,7 @@ for($x = 0; $x < $number; $x++){
 	array_push($roundID,$tickets[$x]);
 }  
 for($x = 0; $x < sizeof($seatID); $x++){
-	echo $seatID[$x]." ";
+	
 }  
 
 
