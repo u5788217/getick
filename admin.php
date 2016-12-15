@@ -11,7 +11,7 @@ session_start();
 	<?php include 'header_menu.php';?>
 	<div id="body">
 		
-		<h1><span><a href="admin.php" style="text-decoration: underline;display: inline-block; color:#fff;">Admin</a></span></h1>
+		<h1><span><a href="admin.php" style="text-decoration: none;display: inline-block; color:#fff;">Admin</a></span></h1>
 		<div>
 			<ul>	
 			 <?php include 'adminconcert_db.php';?>
