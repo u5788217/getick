@@ -26,7 +26,7 @@ for($x = 0; $x < sizeof($zoneID); $x++){
 		$roundid = $aRow['id_round'];
 	}
 }
-foreach ($oConn->query('SELECT id_concert FROM round WHERE id_round = "$roundID"') as $aRow2) {
+foreach ($oConn->query('SELECT * FROM round WHERE id_round = "$roundID"') as $aRow2) {
 	$conid = $aRow2['id_concert'];
 	$date = $aRow2['date'];
 	$time = $aRow2['time'];
