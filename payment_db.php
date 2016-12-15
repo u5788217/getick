@@ -21,6 +21,7 @@ $poster;
 $seatprint = array();
 for($x = 0; $x < sizeof($zoneID); $x++){
 	$z = $zoneID[$x];
+	echo $z;
 	foreach ($oConn->query("SELECT * FROM round WHERE id_zone = '$z'") as $aRow) {
 		$total += $aRow['price'];
 		echo $seatID[$x];
