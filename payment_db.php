@@ -1,8 +1,13 @@
 <?php
 include 'config.php';
-   $tickets = $_GET['ticket'];
-   $oConn = connect_db();
-	for(   $tickets[];)
+
+$tickets = $_GET['ticket'];
+$number = sizeof($tickets);
+$oConn = connect_db();
+
+for($x = 0; $x < $number; $x++){
+	echo $tickets[$x]." ";
+}  
 	foreach ($oConn->query('SELECT * FROM concert') as $aRow) {
         	$conid = $aRow['id_concert'];
 		echo '<li>
