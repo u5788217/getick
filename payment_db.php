@@ -20,7 +20,8 @@ $conname;
 $poster;
 $seatprint = array();
 for($x = 0; $x < sizeof($zoneID); $x++){
-	foreach ($oConn->query("SELECT * FROM round WHERE id_zone = '$zoneID[$x]'") as $aRow) {
+	$z = $zoneID[$x];
+	foreach ($oConn->query("SELECT * FROM round WHERE id_zone = '$z'") as $aRow) {
 		$total += $aRow['price'];
 		echo $seatID[$x];
 		array_push($seatprint,$aRow['name_zone'].$seatID[$x]);
