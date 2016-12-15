@@ -15,9 +15,10 @@
 				<input type="text" name="email" id="email" placeholder="Email" class="login"><br>
 				<input type="text" name="pwd" id="pwd" placeholder="password" class="login"><br>
 				<input type="text" name="address" id="address" placeholder="Address" class="login"><br>
+				<input type="submit" name="send" id="send" value="Register">
 			</form>
 		</div>
-		<input type="submit" name="send" id="send" value="Register">
+		
 	</div>
 	<?php include 'footer.php';?>
 </body>
