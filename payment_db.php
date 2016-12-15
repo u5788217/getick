@@ -7,7 +7,7 @@ $oConn = connect_db();
 $roundID = array(); 
 $seatID = array();
 for($x = 0; $x < $number; $x++){
-	if($x%2 == 0) echo " ".$x;
+	echo " ".$x;
 	array_push($seatID,$tickets[$x]);
 	array_push($roundID,$tickets[$x]);
 }  
