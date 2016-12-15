@@ -37,7 +37,7 @@ foreach ($oConn->query("SELECT * FROM concert WHERE id_concert = '$conid'") as $
 	$poster = $aRow3['poster_concert'];
 }
 
-echo '<li>
+echo '<form method="get" action="updateseat.php"><li>
      <a href="" class="figure">
       <img src='.$poster.' alt="">
      </a>
@@ -60,7 +60,7 @@ echo '<li>
 			
                         <table style="width:850px; margin-left:50px;">
                             <tr>
-                                <td> 	<form method="get" action="updateseat.php">
+                                <td> 	
                                     <h2>Credit card payment</h2>
                                     <img src="images/payment-01.png" style="width:100px; height:70px;">
                                     <br><input type="radio" name="payment" value="Credit card payment">
