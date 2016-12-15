@@ -80,7 +80,8 @@ echo '<li>
                     </div>
                 </li>';
 			    for($x = 0; $x < sizeof($seatID); $x++){
-			echo 	'<input hidden type="text" name="seat[]" value="'.$seatID[$x].'">'; 
+			echo 	'<input hidden type="text" name="seat[]" value="'.$seatID[$x].'">
+				<input hidden type="text" name="zone[]" value="'.$zoneID[$x].'">'; 
 			}	
 			echo 	'<input hidden type="text" name="total" value="'.$total.'">
 		<input type="submit" value="CONFIRM"></form>';
