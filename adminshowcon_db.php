@@ -26,7 +26,6 @@ include 'config.php';
 		}
 	}
 	echo '</table></div></li><li><div style="width: 940px;" class="seat-style"><table>';
-	echo '<form method = "get" action = "payment.php">';
 	$zoneid[4]; 
 	$l=0;
   	foreach ($oConn->query("SELECT * FROM zone WHERE id_round = '$roundid'") as $aRow3) {
@@ -48,7 +47,7 @@ include 'config.php';
 							$j=$aRow['id_seat'];
 							if($j==8 || $j==22 || $j==36 || $j==50){echo '<td colspan="4"></td>';}
 							if($aRow['id_booking'] == NULL){
-								echo '<td id="A">A'.$aRow['id_seat'].'<br><input type="checkbox" name="ticket[]" value="'.$aRow['id_seat'].' '.$zoneid[0].'" onchange="showCheck(this.value)" ></td>';
+								echo '<td id="A">A'.$aRow['id_seat'].'<br></td>';
 							} 
 						   	else {echo '<td id="Ac">A'.$aRow['id_seat'].'<br></td>';}
 							if($j%14==0) {
@@ -63,7 +62,7 @@ include 'config.php';
 							$j=$aRow['id_seat'];	
 							if($j==9 || $j==25 || $j==41 || $j==57 || $j==73 || $j ==89){echo '<td colspan="2"></td>';}
 							if($aRow['id_booking'] == NULL){
-								echo '<td id="B">B'.$aRow['id_seat'].'<br><input type="checkbox" name="ticket[]" value="'.$aRow['id_seat'].' '.$zoneid[1].'" onchange="showCheck(this.value)" ></td>';
+								echo '<td id="B">B'.$aRow['id_seat'].'<br></td>';
 							}   
 							else{echo '<td id="Bc">B'.$aRow['id_seat'].'<br></td>';}
 							if($j%16==0) {
@@ -77,7 +76,7 @@ include 'config.php';
                             			foreach ($oConn->query("SELECT * FROM seat WHERE id_zone = '$zoneid[2]'") as $aRow) {
 							$j=$aRow['id_seat'];
 							if($aRow['id_booking'] == NULL){
-								echo '<td id="C">C'.$aRow['id_seat'].'<br><input type="checkbox" name="ticket[]" value="'.$aRow['id_seat'].' '.$zoneid[2].'" onchange="showCheck(this.value)" ></td>';							
+								echo '<td id="C">C'.$aRow['id_seat'].'<br></td>';							
 }
 							else{echo '<td id="Cc">C'.$aRow['id_seat'].'<br></td>';}
 							if($j%18==0) {
@@ -104,7 +103,7 @@ include 'config.php';
 							if($j==7 || $j==11 || $j==23 || $j==27 || $j==39 || $j==43 || $j==55 || $j==59 || $j==71 || $j==75 || $j==87 || $j==91 || $j==103 || $j==107 || $j==119 || $j==123){
                                 echo '<td colspan="1"></td>';}
 							if($aRow['$id_booking'] == NULL){
-								echo '<td id="A">A'.$aRow['id_seat'].'<br><input type="checkbox" name="ticket[]" value="'.$aRow['id_seat'].' '.$zoneid[0].'" onchange="showCheck(this.value)" ></td>';
+								echo '<td id="A">A'.$aRow['id_seat'].'<br></td>';
 							} 
 						   	else {echo '<td id="Ac">A'.$aRow['id_seat'].'<br></td>';}
 							if($j%16==0) {
@@ -119,7 +118,7 @@ include 'config.php';
 							$j=$aRow['id_seat'];	
 							if($j==9 || $j==25 || $j==41){echo '<td colspan="2"></td>';}
 							if($aRow['id_booking'] == NULL){
-								echo '<td id="B">B'.$aRow['id_seat'].'<br><input type="checkbox" name="ticket[]" value="'.$aRow['id_seat'].' '.$zoneid[1].'" onchange="showCheck(this.value)" ></td>';
+								echo '<td id="B">B'.$aRow['id_seat'].'<br></td>';
 							}   
 							else{echo '<td id="Bc">B'.$aRow['id_seat'].'<br></td>';}
 							if($j%16==0) {
@@ -133,7 +132,7 @@ include 'config.php';
                             			foreach ($oConn->query("SELECT * FROM seat WHERE id_zone = '$zoneid[2]'") as $aRow) {
 							$j=$aRow['id_seat'];
 							if($aRow['id_booking'] == NULL){
-								echo '<td id="C">C'.$aRow['id_seat'].'<br><input type="checkbox" name="ticket[]" value="'.$aRow['id_seat'].' '.$zoneid[2].'" onchange="showCheck(this.value)" ></td>';
+								echo '<td id="C">C'.$aRow['id_seat'].'<br></td>';
 							}
 							else{echo '<td id="Cc">C'.$aRow['id_seat'].'<br></td>';}
 							if($j%18==0) {
@@ -158,7 +157,7 @@ include 'config.php';
 					    	foreach ($oConn->query("SELECT * FROM seat WHERE id_zone = '$zoneid[0]'") as $aRow) {
 							$j=$aRow['id_seat'];
 							if($aRow['$id_booking'] == NULL){
-								echo '<td id="A">A'.$aRow['id_seat'].'<br><input type="checkbox" name="ticket[]" value="'.$aRow['id_seat'].' '.$zoneid[0].'" onchange="showCheck(this.value)" ></td>';
+								echo '<td id="A">A'.$aRow['id_seat'].'<br></td>';
 							} 
 						   	else {echo '<td id="Ac">A'.$aRow['id_seat'].'<br></td>';}
 							if($j%12==0) {
@@ -173,7 +172,7 @@ include 'config.php';
 							$j=$aRow['id_seat'];	
 							if($j==9 || $j==25 || $j==41 || $j==57 || $j==73){echo '<td colspan="2"></td>';}
 							if($aRow['id_booking'] == NULL){
-								echo '<td id="B">B'.$aRow['id_seat'].'<br><input type="checkbox" name="ticket[]" value="'.$aRow['id_seat'].' '.$zoneid[1].'" onchange="showCheck(this.value)" ></td>';
+								echo '<td id="B">B'.$aRow['id_seat'].'<br></td>';
 							}   
 							else{echo '<td id="Bc">B'.$aRow['id_seat'].'<br></td>';}
 							if($j%16==0) {
@@ -187,7 +186,7 @@ include 'config.php';
                             			foreach ($oConn->query("SELECT * FROM seat WHERE id_zone = '$zoneid[2]'") as $aRow) {
 							$j=$aRow['id_seat'];
 							if($aRow['id_booking'] == NULL){
-								echo '<td id="C">C'.$aRow['id_seat'].'<br><input type="checkbox" name="ticket[]" value="'.$aRow['id_seat'].' '.$zoneid[2].'" onchange="showCheck(this.value)" ></td>';
+								echo '<td id="C">C'.$aRow['id_seat'].'<br></td>';
 							}
 							else{echo '<td id="Cc">C'.$aRow['id_seat'].'<br></td>';}
 							if($j%16==0) {
