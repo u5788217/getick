@@ -81,9 +81,8 @@ echo '<form method="get" action="updateseat.php"><li>
 			echo 	'<input hidden type="text" name="seat[]" value="'.$seatID[$x].'">'; 
 			}	
 			echo 	'<input hidden type="text" name="total" value="'.$total.'">
-			<input type="submit" value="CONFIRM">
-                        </table>
+		        </table>
                     </div>
-                </li></form>';
+                </li><input type="submit" value="CONFIRM"></form>';
 	$oConn = null;
 ?>
