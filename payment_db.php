@@ -19,10 +19,11 @@ $time;
 $conname;
 $poster;
 $seatprint = array();
+echo "TESTTT";
 for($x = 0; $x < sizeof($zoneID); $x++){
 	foreach ($oConn->query('SELECT * FROM round WHERE id_zone = "$zoneID[$x]"') as $aRow) {
 		$total += $aRow['price'];
-	
+		array_push($seatprint,$aRow['name_zone'].$seatID[$x]);
 		$roundid = $aRow['id_round'];
 	}
 }
