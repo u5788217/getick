@@ -7,12 +7,12 @@ $oConn = connect_db();
 $roundID = array(); 
 $seatID = array();
 for($x = 0; $x < $number; $x++){
-	echo " ".$x;
-	array_push($seatID,$tickets[$x]);
-	array_push($roundID,$tickets[$x]);
+	$seat = explode(" ", $tickets[$x]);
+	array_push($seatID,$seat[0]);
+	array_push($roundID,$seat[1]);
 }  
 for($x = 0; $x < sizeof($seatID); $x++){
-	
+	echo $seatID[$x]." ";
 }  
 
 
