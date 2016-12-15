@@ -2,7 +2,7 @@
 session_start();
 	echo '<div id="header">
 		<a href="index.php" class="logo">
-			<img src="images/logo.jpg" alt="">
+			<img src="images/logo.png" alt="">
 		</a>
 		<ul id="navigation">
 			<li class="selected">
