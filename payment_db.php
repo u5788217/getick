@@ -21,10 +21,8 @@ $poster;
 $seatprint = array();
 for($x = 0; $x < sizeof($zoneID); $x++){
 	$z = $zoneID[$x];
-	echo $z;
 	foreach ($oConn->query("SELECT * FROM zone WHERE id_zone = '$z'") as $aRow) {
 		$total += $aRow['price'];
-		echo $seatID[$x];
 		array_push($seatprint,$aRow['name_zone'].$seatID[$x]);
 		$roundid = $aRow['id_round'];
 	}
@@ -63,17 +61,17 @@ echo '<li>
                                 <td>
                                     <h2>Credit card payment</h2>
                                     <img src="images/payment-01.png" style="width:100px; height:70px;">
-                                    <br><input type="radio" id="payment-1" name="pay-credit">
+                                    <br><input type="radio" name="payment">
                                 </td>
                                 <td>
                                     <h2>Cash payment and ATM</h2>
                                     <img src="images/payment-02.png" style="width:100px; height:70px; margin-left:110px;">
-                                    <br><input type="radio" id="payment-2" name="pay-cash">
+                                    <br><input type="radio" name="payment">
                                 </td>
                                 <td>
                                     <h2>Mobile payment</h2>
                                     <img src="images/payment-03.png" style="width:100px; height:70px;">
-                                    <br><input type="radio" id="payment-3" name="pay-mobile">
+                                    <br><input type="radio" name="payment">
                                 </td>
                             </tr>
                         </table>
