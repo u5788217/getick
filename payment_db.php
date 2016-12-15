@@ -56,27 +56,33 @@ echo '<li>
                 <li>
                     <div style="width:940px">
                         <h3>Please select your payment method</h3>
+			<form method="get" action="updateseat.php">
                         <table style="width:850px; margin-left:50px;">
                             <tr>
                                 <td>
                                     <h2>Credit card payment</h2>
                                     <img src="images/payment-01.png" style="width:100px; height:70px;">
-                                    <br><input type="radio" name="payment">
+                                    <br><input type="radio" name="payment" value="Credit card payment">
                                 </td>
                                 <td>
                                     <h2>Cash payment and ATM</h2>
                                     <img src="images/payment-02.png" style="width:100px; height:70px; margin-left:110px;">
-                                    <br><input type="radio" name="payment">
+                                    <br><input type="radio" name="payment" value="Cash payment and ATM">
                                 </td>
                                 <td>
                                     <h2>Mobile payment</h2>
                                     <img src="images/payment-03.png" style="width:100px; height:70px;">
-                                    <br><input type="radio" name="payment">
+                                    <br><input type="radio" name="payment" value="Mobile payment">
                                 </td>
                             </tr>
                         </table>
-                        <br>
-                        <input type="button" value="CONFIRM" name="BOOK">
+                        <br>';
+	for($x = 0; $x < sizeof($seatID); $x++){
+			echo 	'<input type="text" name="seat[]" value="'.$seatID[$x].'t">'; 
+		}
+			echo 	'<input type="text" name="total" value="'.$total.'t">'; 
+                        echo '<input type="submit" value="CONFIRM">
+			</form>
                     </div>
                 </li>';
 	$oConn = null;
