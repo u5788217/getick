@@ -8,8 +8,7 @@ $oConn = connect_db();
                         <table border="1" style="width:850px; margin-left:50px;"><tr><th>ID</th>
                         <th>Name</th><th>Date</th><th>Time</th></tr>';
                         foreach ($oConn->query("SELECT * FROM concert INNER JOIN round ON concert.id_concert = round.id_concert") as $aRow) {
-                            echo '<input type="hidden" name="'.$aRow['id_round'].'" value="'.$aRow['id_round'].'" />
-                                 <tr><td>'.$aRow['id_round'].'</td><td><a href="adminshowcon.php?round='.$aRow['id_round'].'">'
+                            echo '<tr><td>'.$aRow['id_round'].'</td><td><a href="adminshowcon.php?round='.$aRow['id_round'].'">'
                                .$aRow['name_concert'].'</a></td><td> '.$aRow['date'].'</td><td>'.$aRow['time'].'</td></tr>';
                         }
                   echo'</table></form></div></li>';
