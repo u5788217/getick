@@ -21,6 +21,7 @@ if($_GET['fname'] != null){
 			if($_GET['fname'] != null) echo '<script language="javascript">
 			alert("Registration was done, now you are loging in."); 
 			window.location = "index.php";</script>';
+			header('Location: /index.php');
 		}
 	}  
 $oConn->execute();
