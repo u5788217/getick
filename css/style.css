@@ -347,6 +347,7 @@ p a:hover {
 	padding: 20px 10px;
 	text-align: center;
 	width: 596px;
+	text-decoration: none;
 }
 #body form textarea {
 	height: 175px;
