@@ -10,7 +10,7 @@ include 'config.php';
 		$zone = $aRow2['name_zone'];
 	}
 	echo $zone.$seatid.' ';
-	echo '<br>';
 	echo 'Price : '.$price;
+	echo '<br>';
 	$oConn = null;
 ?>
