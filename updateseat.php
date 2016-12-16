@@ -10,7 +10,7 @@ include 'config.php';
 	if (!$_SESSION["userid"]) echo "<script type='text/javascript'>alert('You need to login.'); window.location = 'index.php';</script>";
 	$userID = $_SESSION["userid"];
 	foreach ($oConn->query("SELECT * FROM booking") as $aRow) {
-		if($aRow['id_booking']>$id) $id = $aRow['id_booking'];
+		if($aRow['id_booking']>$id) $id = $aRow['id_booking']+1;
 	}
 	$oConn->query("INSERT INTO booking (id_booking,total_price, payment_method, id_account) VALUES ('$id'.'$total', '$payment','$userID')");
 	for($x = 0; $x < sizeof($seats); $x++){
