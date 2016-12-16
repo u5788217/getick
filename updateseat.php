@@ -12,7 +12,7 @@ include 'config.php';
 	foreach ($oConn->query("SELECT MAX(id_booking) FROM booking") as $aRow) {
 		$id = $aRow[0]+1;
 	}
-	$oConn->query("INSERT INTO booking (id_booking,total_price, payment_method, id_account) VALUES ('$id'.'$total', '$payment','$userID')");
+	$oConn->query("INSERT INTO booking (id_booking,total_price, payment_method, id_account) VALUES ('$id','$total', '$payment','$userID')");
 	for($x = 0; $x < sizeof($seats); $x++){
 		$oConn->query("UPDATE seat SET id_booking ='$id' WHERE id_seat = '$seats[$x]' AND id_zone = '$zones[$x]'");
 	}
